@@ -1,0 +1,74 @@
+
+    <div class="tld-h-[80vh] tld-bg-cover tld-py-[90px] " style="background-image:url({{ section.settings.lumni-hero-section-background | image_url: width: 1500 | image_url }})">
+        <div class="tld-container mx-auto">
+            <div class="tld-grid tld-grid-cols-2">
+                <div>
+                    <div class="tld-bg-[#F6F6F6] tld-p-5 tld-rounded-[30px]">
+                        <div style="display: flex; gap: 5px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px" height="24px">
+                              <path d="M12 .587l3.668 7.425 8.21 1.193-5.92 5.762 1.397 8.158L12 18.897l-7.355 3.864 1.397-8.158-5.92-5.762 8.21-1.193L12 .587z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px" height="24px">
+                              <path d="M12 .587l3.668 7.425 8.21 1.193-5.92 5.762 1.397 8.158L12 18.897l-7.355 3.864 1.397-8.158-5.92-5.762 8.21-1.193L12 .587z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px" height="24px">
+                              <path d="M12 .587l3.668 7.425 8.21 1.193-5.92 5.762 1.397 8.158L12 18.897l-7.355 3.864 1.397-8.158-5.92-5.762 8.21-1.193L12 .587z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px" height="24px">
+                              <path d="M12 .587l3.668 7.425 8.21 1.193-5.92 5.762 1.397 8.158L12 18.897l-7.355 3.864 1.397-8.158-5.92-5.762 8.21-1.193L12 .587z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px" height="24px">
+                              <path d="M12 .587l3.668 7.425 8.21 1.193-5.92 5.762 1.397 8.158L12 18.897l-7.355 3.864 1.397-8.158-5.92-5.762 8.21-1.193L12 .587z"/>
+                            </svg>
+                            <p class="tld-pl-[12px]">Trusted by hundreds of customers</p>
+                          </div>
+                    </div>
+                    <h1 class="tld-text-[4p0x] tld-font-semibold">{{ section.settings.lumni-hero-tagline-id }}</h1>
+                </div>
+                <div> {{ section.settings.lumni-hero-section-id }}</div>
+            </div>
+        </div>
+    </div>
+
+
+
+{% schema %}
+{
+    "name":"Lumni Hero Section",
+    "tag": "section",
+    "class": "lumni-hero-section ",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "lumni-hero-section-background",
+            "label": "Hero Background"
+        },
+        {
+            "type": "select",
+            "id": "lumni_rating_stars",
+            "label": "Lumni Header Rating",
+            "options": [
+              {
+                "value": "enable",
+                "label": "Enable"
+              },
+              {
+                "value": "disabled",
+                "label": "Disabled"
+              }
+            ],
+            "default": "disabled"
+        },
+        {
+            "type": "text",
+            "id": "lumni-hero-tagline-id",
+            "label": "Lumni Hero Tagline Heading"
+        },
+    ],
+    "presets": [
+        {
+            "name": "Lumni Hero Section"
+        }
+    ]
+}
+{% endschema %}
