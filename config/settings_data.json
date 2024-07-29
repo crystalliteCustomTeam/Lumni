@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "current": {
     "logo": "shopify:\/\/shop_images\/LumniLogo_1.png",
@@ -390,7 +399,8 @@
       "@media screen and (min-width: 750px) {.page-width {padding: 0rem 1rem; }}",
       "p {font-size: 14px;}",
       "@media screen and (max-width: 1200px) {.section-template--23080367817025__image_with_text_gg37wC-padding.gradient.color-scheme-4 .image-with-text__media.image-with-text__media--small.global-media-settings.background-transparent.media {margin-top: 0px !important; }}",
-      "@media screen and (max-width: 992px) {.section-template--23080367817025__image_with_text_gg37wC-padding.gradient.color-scheme-4 .image-with-text__media.image-with-text__media--small.global-media-settings.background-transparent.media {margin-top: 0px !important; height: 40rem !important; } .section-template--23080367817025__image_with_text_gg37wC-padding.gradient.color-scheme-4 h2.image-with-text__heading.inline-richtext.h1 {font-size: 28px; }}"
+      "@media screen and (max-width: 992px) {.section-template--23080367817025__image_with_text_gg37wC-padding.gradient.color-scheme-4 .image-with-text__media.image-with-text__media--small.global-media-settings.background-transparent.media {margin-top: 0px !important; height: 40rem !important; } .section-template--23080367817025__image_with_text_gg37wC-padding.gradient.color-scheme-4 h2.image-with-text__heading.inline-richtext.h1 {font-size: 28px; }}",
+      "@media screen and (max-width: 768px) {.section-template--23080367817025__image_with_text_gg37wC-padding .image-with-text__grid--reverse {flex-direction: column-reverse; } .section-template--23080367817025__image_with_text_gg37wC-padding .image-with-text__media-item.image-with-text__media-item--medium.image-with-text__media-item--top.grid__item {\/* display: none; *\/ width: 100%; } .section-template--23080367817025__image_with_text_gg37wC-padding .image-with-text__text-item.grid__item {width: 100%; } .section-template--23080367817025__image_with_text_gg37wC-padding div#ImageWithText--template--23080367817025__image_with_text_gg37wC {padding: 6rem 0rem 2rem; } ul#Slider-template--23080367817025__multicolumn_Mj3FCH .multicolumn-card__info {padding: 0rem; }}"
     ]
   }
 }
