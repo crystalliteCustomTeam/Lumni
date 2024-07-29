@@ -1,33 +1,45 @@
-{% if section.settings.lumni-editor == "enable" %}
-    <div>
-        <div class="tld-container">
-            <div class="tld-grid tld-grid-cols-12"></div>
+{% if section.settings['lumni-editor'] == 'enable' %}
+  <div>
+    <div class="tld-container">
+      <div class="tld-grid tld-grid-cols-12 tld-py-10">
+        <div class="tld-col-span-4 tld-flex tld-items-center ">
+            <p class="tld-text-[25px] tld-text-black tld-flex tld-gap-10">Celebrated By Editors <span class="tld-bg-black tld-block tld-w-[1px] tld-h-16">  </span> </p>
         </div>
+        <div class="tld-col-span-8">
+            <img src="{{ 'editor.png' | asset_url }}" width="841.21" height="52.76" alt="Flower">
+        </div>
+      </div>
     </div>
+  </div>
 {% endif %}
 
 {% schema %}
 {
-    "name": "Lumni Editor Section",
-    "tag": "section",
-    "class": "Lumni-editor-section",
-    "settings": [
+  "name": "Lumni Editor Section",
+  "tag": "section",
+  "class": "Lumni-editor-section",
+  "settings": [
+    {
+      "type": "radio",
+      "id": "lumni-editor",
+      "label": "Lumni Editor",
+      "options": [
         {
-            "type": "radio",
-            "id": "lumni-editor",
-            "label": "Lumni Editor",
-            "options": [
-              {
-                "value": "enable",
-                "label": "Enable"
-              },
-              {
-                "value": "disbaled",
-                "label": "Disbaled"
-              }
-            ],
-            "default": "enable"
-          }
-    ]
+          "value": "enable",
+          "label": "Enable"
+        },
+        {
+          "value": "disbaled",
+          "label": "Disbaled"
+        }
+      ],
+      "default": "enable"
+    }
+  ],
+  "presets": [
+    {
+        "name": "Lumni Editor Section"
+    }
+  ]
 }
 {% endschema %}
