@@ -1,5 +1,5 @@
 <div
-  class="  tld-bg-cover  tld-flex tld-justify-center tld-pt-20"
+  class="  tld-bg-cover  tld-flex tld-justify-center xs:tld-pt-10 tld-pt-20"
   style="background-image:url({{ section.settings.lumni-hero-section-background | image_url: width: 1500 | image_url }})"
 >
   <div class="tld-container mx-auto">
@@ -8,7 +8,7 @@
         {% if section.settings.lumni_rating_stars == 'enable' %}
           <div class="tld-bg-[#F6F6F6] tld-p-5 tld-rounded-[30px] tld-w-max">
             <div class="tld-flex tld-gap-3 tld-items-center">
-              <div class="tld-flex tld-items-center tld-w-[80px]">
+              <div class="tld-flex tld-items-center xs:tld-w-[50px] tld-w-[80px]">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px">
                   <path
                       d="M12 .587l3.668 7.425 8.21 1.193-5.92 5.762 1.397 8.158L12 18.897l-7.355 3.864 1.397-8.158-5.92-5.762 8.21-1.193L12 .587z" />
@@ -30,23 +30,23 @@
                       d="M12 .587l3.668 7.425 8.21 1.193-5.92 5.762 1.397 8.158L12 18.897l-7.355 3.864 1.397-8.158-5.92-5.762 8.21-1.193L12 .587z" />
                 </svg>
               </div>
-              <p class="md:tld-text-[12px] lg:tld-text-[14px] xl:tld-text-[15px] tld-leading-none">
+              <p class="xs:tld-text-[12px] tld-text-[15px] md:tld-text-[12px] lg:tld-text-[14px] xl:tld-text-[15px] tld-leading-none">
                 Trusted by hundreds of customers
               </p>
             </div>
           </div>
         {% endif %}
 
-        <h1 class="md:tld-text-[35px] lg:tld-text-[40px] tld-mt-3 tld-font-semibold tld-text-black">
+        <h1 class="sm:tld-text-[40px] md:tld-text-[35px] lg:tld-text-[40px] tld-mt-3 tld-font-semibold tld-text-black">
           {{ section.settings['lumni-hero-tagline-id'] }}
         </h1>
-        <h2 class="md:tld-text-[80px] lg:tld-text-[125px] xl:tld-text-[137px] tld-font-semibold tld-text-black tld-leading-[1]">
+        <h2 class="xs:tld-text-[80px] sm:tld-text-[150px] md:tld-text-[80px] lg:tld-text-[125px] xl:tld-text-[137px] tld-font-semibold tld-text-black tld-leading-[1]">
           {{ section.settings['lumni-hero-heading-id'] }}
         </h2>
-        <p class="tld-text-black md:tld-text-[12px] lg:tld-text-[15px] tld-mt-5 lg:tld-w-[95%] xl:tld-w-[80%]">
+        <p class="tld-text-black tld-text-[15px] md:tld-text-[12px] lg:tld-text-[15px] tld-mt-5 lg:tld-w-[95%] sm:tld-w-[100%] md:tld-w-[80%]">
           {{ section.settings['lumni-hero-para-id'] }}
         </p>
-        <div class="tld-bg-[#C7DBC6] md:tld-py-3 md:tld-px-5 lg:tld-py-5 lg:tld-px-8  md:tld-mt-5 lg:tld-mt-10 tld-rounded-[30px] tld-w-max ">
+        <div class="tld-bg-[#C7DBC6]  md:tld-py-3  tld-px-10 tld-py-2 sm:tld-px-5 sm:tld-py-5 md:tld-px-5 lg:tld-py-5 lg:tld-px-8 tld-mt-5  md:tld-mt-5 lg:tld-mt-10 tld-rounded-[30px] tld-w-max ">
           <a
             href="{{ section.settings.lumni-shop-url-id }}"
             class="md:tld-text-[12px] lg:tld-text-[15px] xl:tld-text-[17px] tld-text-black  tld-flex tld-gap-5"
@@ -55,7 +55,7 @@
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 64 64"
-              class="md:tld-w-[18px] md:tld-h-[18px] lg:tld-w-[24px] lg:tld-h-[24px]"
+              class="tld-w-[24px] tld-h-[24px]   md:tld-w-[18px] md:tld-h-[18px] lg:tld-w-[24px] lg:tld-h-[24px]"
             >
               <path
                   d="M48 16h-4v-4c0-6.6-5.4-12-12-12S20 5.4 20 12v4h-4c-2.2 0-4 1.8-4 4v36c0 2.2 1.8 4 4 4h32c2.2 0 4-1.8 4-4V20c0-2.2-1.8-4-4-4zM24 12c0-4.4 3.6-8 8-8s8 3.6 8 8v4H24v-4zm24 44H16V20h4v4h4v-4h16v4h4v-4h4v36z"
@@ -63,8 +63,8 @@
             </svg>
           </a>
         </div>
-        <div class="tld-mt-10">
-          <p class="tld-text-black md:tld-text-[10px] lg:tld-text-[13px] xl:tld-text-[15px] ">
+        <div class="xs:tld-mt-5 tld-mt-10">
+          <p class=" tld-text-black xs:tld-text-[10px] md:tld-text-[10px] lg:tld-text-[13px] xl:tld-text-[15px] ">
             {{ section.settings['lumni-shop-addon-text-id'] }}
           </p>
         </div>

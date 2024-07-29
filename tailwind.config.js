@@ -25,6 +25,15 @@ module.exports = {
         'heading': 'var(--font-heading-family)',
         'body': 'var(--font-body-family)'
       },
+      animation: {
+        marquee: 'marquee 800s linear infinite'
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        }
+      }
     },
    
   },

@@ -1,0 +1,41 @@
+<div>
+  <div style="background:{{ section.settings.lumni-marquee-background }};" class="tld-py-3">
+    <div class="tld-relative tld-flex tld-overflow-x-hidden">
+      {% assign numbers = (1..100) %}
+      <div class="tld-py-5 tld-items-center tld-flex tld-animate-marquee tld-whitespace-nowrap">
+        {% assign images = 'flower-yellow.png,flower-pink.png' | split: ',' %}
+        {% for number in numbers %}
+          {% assign image_index = forloop.index0 | modulo: 2 %}
+          <img src="{{ images[image_index] | asset_url }}" width="30" height="30" alt="Flower">
+          <span class="tld-text-4xl tld-mx-4 tld-text-white">{{ section.settings['lumni-marquee-text'] }}</span>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Spring Marquee",
+  "tag": "section",
+  "class": "lumni-marquee",
+  "settings": [
+    {
+      "type": "text",
+      "id": "lumni-marquee-text",
+      "label": "Lumni Marquee Text"
+    },
+    {
+      "type": "color",
+      "id": "lumni-marquee-background",
+      "label": "Marquee Background Color",
+      "default": "#000000"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Lumni Marquee"
+    }
+  ]
+}
+{% endschema %}
