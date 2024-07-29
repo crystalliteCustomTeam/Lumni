@@ -803,6 +803,10 @@ video {
   .xs\:tld-text-\[75px\] {
     font-size: 75px;
   }
+
+  .xs\:tld-text-\[70px\] {
+    font-size: 70px;
+  }
 }
 
 @media (min-width: 576px) {
