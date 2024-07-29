@@ -1141,3 +1141,8 @@ video {
     font-size: 25px;
   }
 }
+@media screen and (max-width: 768px) {
+.section-template--23080367817025__image_with_text_gg37wC-padding.gradient.color-scheme-4 .image-with-text__media.image-with-text__media--small.global-media-settings.background-transparent.media {
+        margin-top: 0px !important;
+        height: 27rem !important;
+    }
