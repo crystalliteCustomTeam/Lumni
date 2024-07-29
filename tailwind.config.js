@@ -8,11 +8,17 @@ module.exports = {
     './snippets/*.liquid',
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "1rem",
+    },
     screens: {
-      'md': '750px',
-      'lg': '990px',
-      'xl': '1200px',
-      '2xl': '1400px'
+      "xs": { "max": "576px" },
+      "sm": "576px",
+      "md": "768px",
+      "lg": "992px",
+      "xl": "1200px",
+      "2xl": "1400px",
     },
     extend: {
       fontFamily: {
@@ -20,16 +26,7 @@ module.exports = {
         'body': 'var(--font-body-family)'
       },
     },
-    container: {
-      center: true,
-      padding: {
-        DEFAULT: '1rem',
-        sm: '2rem',
-        lg: '4rem',
-        xl: '5rem',
-        '2xl': '6rem',
-      },
-    },
+   
   },
   plugins: [],
 }
