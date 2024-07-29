@@ -971,6 +971,10 @@ video {
     margin-top: 1.25rem;
   }
 
+  .md\:tld-block {
+    display: block;
+  }
+
   .md\:tld-h-\[18px\] {
     height: 18px;
   }
