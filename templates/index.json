@@ -29,21 +29,21 @@
         "heading_bH9RJd": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Wrinkles, Dullness, crepy skin Yes Microneedling does it all",
             "heading_size": "h1"
           }
         },
         "text_ij4YNh": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Microneedling has indeed become a popular and versatile solution for various skin concerns, evolving from a treatment exclusive to dermatologist offices to a more accessible at-home solution.<br\/><br\/>This technique is known for its ability to address multiple skin issues, such as wrinkles, dullness, and uneven texture.<\/p>",
             "text_style": "body"
           }
         },
         "button_EyEfPk": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "Shop All Microneedling Pens",
             "button_link": "",
             "button_style_secondary": false
           }
@@ -62,11 +62,11 @@
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "section_color_scheme": "",
-        "color_scheme": "",
+        "color_scheme": "scheme-4",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 92,
+        "padding_bottom": 92
       }
     }
   },
