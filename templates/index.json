@@ -1,75 +1,78 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "hero_banner_WEKd7f": {
+      "type": "hero-banner",
+      "settings": {
+        "lumni-hero-section-background": "shopify:\/\/shop_images\/abstract-colorful-blurry-background.png",
+        "lumni_rating_stars": "enable",
+        "lumni-hero-tagline-id": "See Glowing results in",
+        "lumni-hero-heading-id": "2 Weeks!",
+        "lumni-hero-para-id": "Our celebrated skincare tools help you soften wrinkles, \nincrease elasticity, stop sagging, refine fine lines, and reduce \nblemishes effectively!",
+        "lumni-shop-text-id": "Shop All Microneedling Pens",
+        "lumni-shop-url-id": "#",
+        "lumni-hero-section-image": "shopify:\/\/shop_images\/Group_1089.png",
+        "lumni-shop-addon-text-id": "🤞 Free Shipping: Fast Free Shipping With All Orders Above $39"
+      }
+    },
+    "image_with_text_gg37wC": {
+      "type": "image-with-text",
       "blocks": {
-        "heading": {
+        "heading_bH9RJd": {
           "type": "heading",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
+            "heading": "Wrinkles, Dullness, crepy skin Yes Microneedling does it all",
+            "heading_size": "h1"
           }
         },
-        "button": {
-          "type": "buttons",
+        "text_ij4YNh": {
+          "type": "text",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "text": "<p>Microneedling has indeed become a popular and versatile solution for various skin concerns, evolving from a treatment exclusive to dermatologist offices to a more accessible at-home solution.<br\/><br\/>This technique is known for its ability to address multiple skin issues, such as wrinkles, dullness, and uneven texture.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_EyEfPk": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop All Microneedling Pens",
+            "button_link": "",
+            "button_style_secondary": false
           }
         }
       },
       "block_order": [
-        "heading",
-        "button"
+        "heading_bH9RJd",
+        "text_ij4YNh",
+        "button_EyEfPk"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
+        "image": "shopify:\/\/shop_images\/Group-1089.png",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-4",
+        "color_scheme": "scheme-4",
         "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 44,
-        "padding_bottom": 36
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
   "order": [
-    "image_banner",
-    "featured_collection"
+    "hero_banner_WEKd7f",
+    "image_with_text_gg37wC"
   ]
 }
