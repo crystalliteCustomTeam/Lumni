@@ -1,0 +1,33 @@
+{% if section.settings.lumni-editor == "enable" %}
+    <div>
+        <div class="tld-container">
+            <div class="tld-grid tld-grid-cols-12"></div>
+        </div>
+    </div>
+{% endif %}
+
+{% schema %}
+{
+    "name": "Lumni Editor Section",
+    "tag": "section",
+    "class": "Lumni-editor-section",
+    "settings": [
+        {
+            "type": "radio",
+            "id": "lumni-editor",
+            "label": "Lumni Editor",
+            "options": [
+              {
+                "value": "enable",
+                "label": "Enable"
+              },
+              {
+                "value": "disbaled",
+                "label": "Disbaled"
+              }
+            ],
+            "default": "enable"
+          }
+    ]
+}
+{% endschema %}
