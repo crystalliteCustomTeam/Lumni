@@ -86,7 +86,26 @@
                   </div>
                 {%- when 'button' -%}
                   {%- if block.settings.button_label != blank -%}
-                    <a
+
+
+                    <div class="tld-bg-[#C7DBC6] md:tld-py-3 md:tld-px-5 lg:tld-py-5 lg:tld-px-8  md:tld-mt-5 lg:tld-mt-10 tld-rounded-[30px] tld-w-max ">
+                      <a
+                        href="{{ block.settings.button_link }}"
+                        class="md:tld-text-[12px] lg:tld-text-[15px] xl:tld-text-[17px] tld-text-black  tld-flex tld-gap-5"
+                      >
+                        {{ block.settings.button_label | escape }}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 64 64"
+                          class="md:tld-w-[18px] md:tld-h-[18px] lg:tld-w-[24px] lg:tld-h-[24px]"
+                        >
+                          <path
+                              d="M48 16h-4v-4c0-6.6-5.4-12-12-12S20 5.4 20 12v4h-4c-2.2 0-4 1.8-4 4v36c0 2.2 1.8 4 4 4h32c2.2 0 4-1.8 4-4V20c0-2.2-1.8-4-4-4zM24 12c0-4.4 3.6-8 8-8s8 3.6 8 8v4H24v-4zm24 44H16V20h4v4h4v-4h16v4h4v-4h4v36z"
+                              fill="#000000" />
+                        </svg>
+                      </a>
+                    </div>
+                    {% comment %} <a
                       {% if block.settings.button_link == blank %}
                         role="link" aria-disabled="true"
                       {% else %}
@@ -96,7 +115,7 @@
                       {{ block.shopify_attributes }}
                     >
                       {{ block.settings.button_label | escape }}
-                    </a>
+                    </a> {% endcomment %}
                   {%- endif -%}
               {%- endcase -%}
             {%- endfor -%}
