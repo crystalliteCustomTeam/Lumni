@@ -17,8 +17,15 @@
         "link_list_yRPjhz": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
-            "menu": "main-menu"
+            "heading": "",
+            "menu": "footer-menu"
+          }
+        },
+        "text_HFwth3": {
+          "type": "text",
+          "settings": {
+            "heading": "Sign up and save",
+            "subtext": "<p>Subscribe to get special offers, <br\/>free giveaways, and once-in-a-lifetime deals.<\/p>"
           }
         },
         "text_xnzVMm": {
@@ -31,6 +38,7 @@
       },
       "block_order": [
         "link_list_yRPjhz",
+        "text_HFwth3",
         "text_xnzVMm"
       ],
       "settings": {
