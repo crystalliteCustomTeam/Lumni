@@ -1,0 +1,38 @@
+<div class="tld-py-[90px]">
+    <div class="tld-container">
+        <div class="tld-my-10">
+            <h2 class="tld-text-black tld-text-[40px] tld-text-center">{{ section.settings.lumni-featured-product-title }}</h2>
+        </div>
+        <div class="tld-grid tld-grid-cols-2 tld-gap-5">
+            <div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "Lumni Featured Project",
+        "tag": "section",
+        "class": "lumni-star-featured-project",
+        "settings": [
+            {
+                "type": "text",
+                "id": "lumni-featured-product-title",
+                "label": "Featured Section Title",
+                "default" : "Voted #1 Microneedling Device of 2024"
+            },
+            {
+                "type": "product",
+                "id": "lumni-featured-product-item",
+                "label": "Lumni Featured Product",
+            }
+        ],
+        "presets": [
+            {
+                "name": "Lumni Featured Product"
+            }
+        ]
+    }
+{% endschema %}
