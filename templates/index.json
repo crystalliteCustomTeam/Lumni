@@ -231,6 +231,99 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "image_with_text_QaUEr6": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_ngA76N": {
+          "type": "heading",
+          "settings": {
+            "heading": "Professional Microneedling At Home",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ngA76N"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Image_16.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "bottom",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_rhRtd4": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_qj4n3q": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<ul><li>Creates firmer, smoother skin <\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_cBF6zy": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<ul><li>Plumping action for Volume Loss<\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_zF8C8D": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<ul><li>Stimulates skin cells to regenerate healthy, glowing skin reduce the signs of aging by tapping into your skins <\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_iQPREQ": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<ul><li>natural response for regeneration <br\/>of new healthy skin cells<\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_qj4n3q",
+        "column_cBF6zy",
+        "column_zF8C8D",
+        "column_iQPREQ"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -240,6 +333,8 @@
     "lumni_collection_caro_wV7U6d",
     "image_with_text_gg37wC",
     "multicolumn_Mj3FCH",
-    "multicolumn_UE9ijm"
+    "multicolumn_UE9ijm",
+    "image_with_text_QaUEr6",
+    "multicolumn_rhRtd4"
   ]
 }
