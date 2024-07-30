@@ -324,24 +324,6 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "lumni_collection_caro_9MP7qB": {
-      "type": "lumni-collection-caro",
-      "blocks": {
-        "slides_YRVd8j": {
-          "type": "slides",
-          "settings": {
-            "lumni-carosuel-item-text": "Microneedling Serum",
-            "lumni-carousel-item-image": "shopify:\/\/shop_images\/Layer_6_6af7e202-ef11-4d76-8def-e6d4bca1e2c4.png",
-            "lumni-carousel-item-url": "#"
-          }
-        }
-      },
-      "block_order": [
-        "slides_YRVd8j"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
@@ -353,7 +335,6 @@
     "multicolumn_Mj3FCH",
     "multicolumn_UE9ijm",
     "image_with_text_QaUEr6",
-    "multicolumn_rhRtd4",
-    "lumni_collection_caro_9MP7qB"
+    "multicolumn_rhRtd4"
   ]
 }
