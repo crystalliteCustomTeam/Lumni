@@ -36,6 +36,51 @@
         "lumni-editor": "enable"
       }
     },
+    "lumni_collection_caro_wV7U6d": {
+      "type": "lumni-collection-caro",
+      "blocks": {
+        "slides_hALJXT": {
+          "type": "slides",
+          "settings": {
+            "lumni-carosuel-item-text": "Microneedling Pens",
+            "lumni-carousel-item-image": "shopify:\/\/shop_images\/Layer_2.png",
+            "lumni-carousel-item-url": "#"
+          }
+        },
+        "slides_UJhekP": {
+          "type": "slides",
+          "settings": {
+            "lumni-carosuel-item-text": "MicroFusion Facials",
+            "lumni-carousel-item-image": "shopify:\/\/shop_images\/Layer_4.png",
+            "lumni-carousel-item-url": "#"
+          }
+        },
+        "slides_a7fXFd": {
+          "type": "slides",
+          "settings": {
+            "lumni-carosuel-item-text": "Microneedling Serum",
+            "lumni-carousel-item-image": "shopify:\/\/shop_images\/Layer_6_6af7e202-ef11-4d76-8def-e6d4bca1e2c4.png",
+            "lumni-carousel-item-url": "#"
+          }
+        },
+        "slides_J8tbBE": {
+          "type": "slides",
+          "settings": {
+            "lumni-carosuel-item-text": "Microneedling Cartridges",
+            "lumni-carousel-item-image": "shopify:\/\/shop_images\/Layer_8.png",
+            "lumni-carousel-item-url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "slides_hALJXT",
+        "slides_UJhekP",
+        "slides_a7fXFd",
+        "slides_J8tbBE"
+      ],
+      "settings": {
+      }
+    },
     "image_with_text_gg37wC": {
       "type": "image-with-text",
       "blocks": {
@@ -186,60 +231,15 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "lumni_collection_caro_wV7U6d": {
-      "type": "lumni-collection-caro",
-      "blocks": {
-        "slides_hALJXT": {
-          "type": "slides",
-          "settings": {
-            "lumni-carosuel-item-text": "Microneedling Pens",
-            "lumni-carousel-item-image": "shopify:\/\/shop_images\/Layer_2.png",
-            "lumni-carousel-item-url": "#"
-          }
-        },
-        "slides_UJhekP": {
-          "type": "slides",
-          "settings": {
-            "lumni-carosuel-item-text": "MicroFusion Facials",
-            "lumni-carousel-item-image": "shopify:\/\/shop_images\/Layer_4.png",
-            "lumni-carousel-item-url": "#"
-          }
-        },
-        "slides_a7fXFd": {
-          "type": "slides",
-          "settings": {
-            "lumni-carosuel-item-text": "Microneedling Serum",
-            "lumni-carousel-item-image": "shopify:\/\/shop_images\/Layer_6_6af7e202-ef11-4d76-8def-e6d4bca1e2c4.png",
-            "lumni-carousel-item-url": "#"
-          }
-        },
-        "slides_J8tbBE": {
-          "type": "slides",
-          "settings": {
-            "lumni-carosuel-item-text": "Microneedling Cartridges",
-            "lumni-carousel-item-image": "shopify:\/\/shop_images\/Layer_8.png",
-            "lumni-carousel-item-url": "#"
-          }
-        }
-      },
-      "block_order": [
-        "slides_hALJXT",
-        "slides_UJhekP",
-        "slides_a7fXFd",
-        "slides_J8tbBE"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
     "hero_banner_WEKd7f",
     "announcement_bar_custom_mVrDaT",
     "editor_UVcJG6",
+    "lumni_collection_caro_wV7U6d",
     "image_with_text_gg37wC",
     "multicolumn_Mj3FCH",
-    "multicolumn_UE9ijm",
-    "lumni_collection_caro_wV7U6d"
+    "multicolumn_UE9ijm"
   ]
 }
