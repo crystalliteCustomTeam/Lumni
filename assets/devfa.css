@@ -65,3 +65,15 @@ li#Slide-template--23080367817025__multicolumn_rhRtd4-4 {
 .section-template--23080367817025__image_with_text_QaUEr6-padding.gradient.color-scheme-1 .image-with-text__media-item.image-with-text__media-item--medium.image-with-text__media-item--bottom.grid__item {
     margin-top: -6rem;
 }
+@media screen and (min-width: 1200px) {
+    #shopify-section-template--23080367817025__image_with_text_gg37wC div#ImageWithText--template--23080367817025__image_with_text_gg37wC {
+        padding: 3rem 4rem 3rem 0.5rem;
+    }
+#shopify-section-template--23080367817025__image_with_text_gg37wC div#ImageWithText--template--23080367817025__image_with_text_gg37wC h2.image-with-text__heading.inline-richtext.h1 {
+    font-size: 36px;
+}
+#shopify-section-template--23080367817025__image_with_text_gg37wC .image-with-text__media.image-with-text__media--small.global-media-settings.background-transparent.media {
+    margin-top: -130px;
+    border: unset;
+}
+}
