@@ -65,7 +65,7 @@ li#Slide-template--23080367817025__multicolumn_rhRtd4-4 {
 .section-template--23080367817025__image_with_text_QaUEr6-padding.gradient.color-scheme-1 .image-with-text__media-item.image-with-text__media-item--medium.image-with-text__media-item--bottom.grid__item {
     margin-top: -6rem;
 }
-@media screen and (max-width: 1200px) {
+@media screen (min-width: 1400px )and (max-width: 1200px) {
     #shopify-section-template--23080367817025__image_with_text_gg37wC div#ImageWithText--template--23080367817025__image_with_text_gg37wC {
         padding: 3rem 4rem 3rem 0.5rem !important;
     }
