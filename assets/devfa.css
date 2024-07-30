@@ -23,3 +23,6 @@ div#ImageWithText--template--23080367817025__image_with_text_QaUEr6
 .image-with-text__media.image-with-text__media--adapt.global-media-settings.background-transparent.media {
   border: unset;
 }
+.page-width.section-template--23080367817025__multicolumn_rhRtd4-padding.isolate.scroll-trigger.animate--slide-in ul li multicolumn-card__info {
+  padding: 0;
+}
