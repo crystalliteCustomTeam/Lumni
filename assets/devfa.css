@@ -1,5 +1,15 @@
+p {
+  font-size: 15px;
+}
+.section-template--23080367817025__image_with_text_gg37wC-padding .page-width, section#shopify-section-template--23080367817025__multicolumn_Mj3FCH .page-width, section#shopify-section-template--23080367817025__multicolumn_UE9ijm .page-width, .section-template--23080367817025__image_with_text_QaUEr6-padding.gradient.color-scheme-1 .page-width {
+        padding: 0 1rem;
+}
+section#shopify-section-template--23080367817025__multicolumn_rhRtd4 .page-width {
+        padding: 4rem 1rem;
+}
+
 div#ImageWithText--template--23080367817025__image_with_text_QaUEr6 h2.image-with-text__heading.inline-richtext.h1 {
-    border-bottom: 2px dashed #707070;
+    border-bottom: 2px dashed #707070a6;
     padding-bottom: 2rem;
 }
 .section-template--23080367817025__image_with_text_qY4n4J-padding.gradient.color-scheme-1 .image-with-text__media.image-with-text__media--small.global-media-settings.background-transparent.media img {
@@ -27,6 +37,9 @@ div#ImageWithText--template--23080367817025__image_with_text_QaUEr6
 .page-width.section-template--23080367817025__multicolumn_rhRtd4-padding.isolate.scroll-trigger.animate--slide-in .multicolumn-card.content-container {
     background: unset !important;
 }
+.page-width.section-template--23080367817025__multicolumn_rhRtd4-padding.isolate.scroll-trigger.animate--slide-in .multicolumn-card.content-container {
+    background: unset !important;
+}
 .page-width.section-template--23080367817025__multicolumn_rhRtd4-padding.isolate.scroll-trigger.animate--slide-in .multicolumn-card__info {
   padding: 0 !important;
 }
@@ -45,4 +58,120 @@ li#Slide-template--23080367817025__multicolumn_rhRtd4-3 {
 li#Slide-template--23080367817025__multicolumn_rhRtd4-4 {
     width: 22% !important;
     max-width: 22%;
+}
+.section-template--23080367817025__image_with_text_QaUEr6-padding.gradient.color-scheme-1 {
+    background-color: #F8F8F6;
+}
+li#Slide-template--23080367817025__multicolumn_rhRtd4-1 {
+    width: 20% !important;
+    max-width: 20%;
+}
+li#Slide-template--23080367817025__multicolumn_rhRtd4-2 {
+    width: 21% !important;
+    max-width: 21%;
+}
+li#Slide-template--23080367817025__multicolumn_rhRtd4-3 {
+    width: 35% !important;
+    max-width: 35%;
+}
+li#Slide-template--23080367817025__multicolumn_rhRtd4-4 {
+    width: 22% !important;
+    max-width: 22%;
+}
+.section-template--23080367817025__image_with_text_QaUEr6-padding.gradient.color-scheme-1 {
+    margin-top: 10rem;
+}
+.section-template--23080367817025__image_with_text_QaUEr6-padding.gradient.color-scheme-1 .image-with-text__media-item.image-with-text__media-item--medium.image-with-text__media-item--bottom.grid__item {
+    margin-top: -6rem;
+}
+@media (max-width: 1200px ) {
+    #shopify-section-template--23080367817025__image_with_text_gg37wC div#ImageWithText--template--23080367817025__image_with_text_gg37wC {
+        padding: 3rem 4rem 3rem 0.5rem !important;
+    }
+#shopify-section-template--23080367817025__image_with_text_gg37wC div#ImageWithText--template--23080367817025__image_with_text_gg37wC h2.image-with-text__heading.inline-richtext.h1 {
+    font-size: 36px !important;
+}
+#shopify-section-template--23080367817025__image_with_text_gg37wC .image-with-text__media.image-with-text__media--small.global-media-settings.background-transparent.media {
+    margin-top: -130px !important;
+}
+  li#Slide-template--23080367817025__multicolumn_rhRtd4-1 {
+    width: 50% !important;
+    max-width: 49%;
+}
+li#Slide-template--23080367817025__multicolumn_rhRtd4-2 {
+    width: 50% !important;
+    max-width: 49%;
+}
+li#Slide-template--23080367817025__multicolumn_rhRtd4-3 {
+    width: 50% !important;
+    max-width: 49%;
+}
+li#Slide-template--23080367817025__multicolumn_rhRtd4-4 {
+    width: 50% !important;
+    max-width: 49%;
+}
+}
+@media (max-width: 1080px) {
+  #shopify-section-template--23080367817025__image_with_text_gg37wC div#ImageWithText--template--23080367817025__image_with_text_gg37wC {
+        padding: 3rem 4rem 3rem 0.5rem !important;
+    }
+  #shopify-section-template--23080367817025__image_with_text_gg37wC div#ImageWithText--template--23080367817025__image_with_text_gg37wC h2.image-with-text__heading.inline-richtext.h1 {
+    font-size: 30px !important;
+}
+#shopify-section-template--23080367817025__image_with_text_gg37wC .image-with-text__media.image-with-text__media--small.global-media-settings.background-transparent.media {
+        margin-top: -65px !important;
+        height: 45rem;
+  }
+  #shopify-section-template--23080367817025__image_with_text_gg37wC .image-with-text__text-item.grid__item{
+    width: 55%;
+  }
+  #shopify-section-template--23080367817025__image_with_text_gg37wC .image-with-text__media-item.image-with-text__media-item--medium.image-with-text__media-item--top.grid__item{
+    width: 45%;
+  }
+}
+@media (max-width: 768px) {
+  #shopify-section-template--23080367817025__image_with_text_gg37wC div#ImageWithText--template--23080367817025__image_with_text_gg37wC {
+        padding: 5rem 4rem 3rem 3rem !important;
+    }
+  #shopify-section-template--23080367817025__image_with_text_gg37wC div#ImageWithText--template--23080367817025__image_with_text_gg37wC h2.image-with-text__heading.inline-richtext.h1 {
+    font-size: 30px !important;
+}
+#shopify-section-template--23080367817025__image_with_text_gg37wC .image-with-text__media.image-with-text__media--small.global-media-settings.background-transparent.media {
+        margin-top: 0px !important;
+        height: 45rem;
+  }
+  #shopify-section-template--23080367817025__image_with_text_gg37wC .image-with-text__text-item.grid__item{
+    width: 100%;
+  }
+  #shopify-section-template--23080367817025__image_with_text_gg37wC .image-with-text__media-item.image-with-text__media-item--medium.image-with-text__media-item--top.grid__item{
+    width: 100%;
+  }
+  #shopify-section-template--23080367817025__image_with_text_gg37wC .image-with-text__grid.grid.grid--gapless.grid--1-col.grid--2-col-tablet.image-with-text__grid--reverse {
+    flex-direction: column-reverse;
+}
+  ul#Slider-template--23080367817025__multicolumn_Mj3FCH .multicolumn-card__info {
+    padding: 0rem;
+}
+  li#Slide-template--23080367817025__multicolumn_rhRtd4-1 {
+    width: 100% !important;
+    max-width: 100%;
+}
+li#Slide-template--23080367817025__multicolumn_rhRtd4-2 {
+    width: 100% !important;
+    max-width: 100%;
+}
+li#Slide-template--23080367817025__multicolumn_rhRtd4-3 {
+    width: 100% !important;
+    max-width: 100%;
+}
+li#Slide-template--23080367817025__multicolumn_rhRtd4-4 {
+    width: 100% !important;
+    max-width: 100%;
+}
+}
+@media (max-width: 576px) {
+  #shopify-section-template--23080367817025__image_with_text_gg37wC .image-with-text__media.image-with-text__media--small.global-media-settings.background-transparent.media {
+        margin-top: 0px !important;
+        height: 30rem;
+  }
 }
