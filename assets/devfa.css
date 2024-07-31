@@ -114,6 +114,9 @@ li#Slide-template--23080367817025__multicolumn_rhRtd4-4 {
   #shopify-section-template--23080367817025__image_with_text_gg37wC .image-with-text__grid.grid.grid--gapless.grid--1-col.grid--2-col-tablet.image-with-text__grid--reverse {
     flex-direction: column-reverse;
 }
+  ul#Slider-template--23080367817025__multicolumn_Mj3FCH .multicolumn-card__info {
+    padding: 0rem;
+}
 }
 @media (max-width: 576px) {
   #shopify-section-template--23080367817025__image_with_text_gg37wC .image-with-text__media.image-with-text__media--small.global-media-settings.background-transparent.media {
