@@ -96,13 +96,13 @@ li#Slide-template--23080367817025__multicolumn_rhRtd4-4 {
 }
 @media (max-width: 768px) {
   #shopify-section-template--23080367817025__image_with_text_gg37wC div#ImageWithText--template--23080367817025__image_with_text_gg37wC {
-        padding: 3rem 4rem 3rem 3rem !important;
+        padding: 5rem 4rem 3rem 3rem !important;
     }
   #shopify-section-template--23080367817025__image_with_text_gg37wC div#ImageWithText--template--23080367817025__image_with_text_gg37wC h2.image-with-text__heading.inline-richtext.h1 {
     font-size: 30px !important;
 }
 #shopify-section-template--23080367817025__image_with_text_gg37wC .image-with-text__media.image-with-text__media--small.global-media-settings.background-transparent.media {
-        margin-top: -65px !important;
+        margin-top: 0px !important;
         height: 45rem;
   }
   #shopify-section-template--23080367817025__image_with_text_gg37wC .image-with-text__text-item.grid__item{
