@@ -5,89 +5,52 @@
         {{ section.settings['lumni-featured-product-title'] }}
       </h2>
     </div>
-    <div class="tld-grid tld-grid-cols-2 tld-gap-5 tld-mt-20">
+    <div class="tld-grid tld-grid-cols-2 tld-gap-10 tld-mt-20">
       <div class="tld-relative">
         <img
           src="{{ section.settings.lumni-featured-product-image | image_url  }}"
           width="620"
           height="680"
-          class="tld-mx-auto"
+          class="tld-mx-auto tld-w-full"
         >
         {% if section.settings['lumni-featured-product-item'] %}
           {% assign product = all_products[section.settings['lumni-featured-product-item']] %}
-          <p>Product ID: {{ product.variants.first.id }}</p>
+          <div class="tld-absolute tld-top-0  tld-right-10 ">
+            <form id="add-to-cart-form-{{ section.id }} " method="post" action="/cart/add">
+              <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+              <input type="hidden" id="quantity" name="quantity" value="1">
+              <div class="tld-bg-[#C7DBC6] md:tld-py-3 md:tld-px-5 lg:tld-py-5 lg:tld-px-8  md:tld-mt-5 lg:tld-mt-10 tld-rounded-[30px] tld-w-max ">
+                <button
+                  type="submit"
+                  name="add"
+                  class="md:tld-text-[12px] lg:tld-text-[15px] xl:tld-text-[17px] tld-text-black  tld-flex tld-gap-5"
+                  {% if product.available == false %}
+                    disabled
+                  {% endif %}
+                >
+                  {%- if product.available -%}
+                    {{ 'products.product.add_to_cart' | t }}
+                  {%- endif -%}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 64 64"
+                    class="md:tld-w-[18px] md:tld-h-[18px] lg:tld-w-[24px] lg:tld-h-[24px]"
+                  >
+                    <path
+                        d="M48 16h-4v-4c0-6.6-5.4-12-12-12S20 5.4 20 12v4h-4c-2.2 0-4 1.8-4 4v36c0 2.2 1.8 4 4 4h32c2.2 0 4-1.8 4-4V20c0-2.2-1.8-4-4-4zM24 12c0-4.4 3.6-8 8-8s8 3.6 8 8v4H24v-4zm24 44H16V20h4v4h4v-4h16v4h4v-4h4v36z"
+                        fill="#000000" />
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
           <!-- Debugging -->
           <!-- Add to Cart Form -->
-          <form id="add-to-cart-form-{{ section.id }}">
-            <input type="hidden" name="id" value="{{ product.variants.first.id }}">
-            <div class="tld-bg-[#C7DBC6] md:tld-py-3 md:tld-px-5 lg:tld-py-5 lg:tld-px-8  md:tld-mt-5 lg:tld-mt-10 tld-rounded-[30px] tld-w-max ">
-              <button type="submit" id="add-to-cart-button-{{ section.id }}" class="md:tld-text-[12px] lg:tld-text-[15px] xl:tld-text-[17px] tld-text-black  tld-flex tld-gap-5">
-                Add to Cart
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 64 64"
-                  class="md:tld-w-[18px] md:tld-h-[18px] lg:tld-w-[24px] lg:tld-h-[24px]"
-                >
-                  <path
-                      d="M48 16h-4v-4c0-6.6-5.4-12-12-12S20 5.4 20 12v4h-4c-2.2 0-4 1.8-4 4v36c0 2.2 1.8 4 4 4h32c2.2 0 4-1.8 4-4V20c0-2.2-1.8-4-4-4zM24 12c0-4.4 3.6-8 8-8s8 3.6 8 8v4H24v-4zm24 44H16V20h4v4h4v-4h16v4h4v-4h4v36z"
-                      fill="#000000" />
-                </svg>
-              </button>
-            </div>
-          </form>
 
-          <div id="cart-message-{{ section.id }}"></div>
+         
         {% else %}
           <p>No product selected.</p>
         {% endif %}
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-              const form = document.getElementById('add-to-cart-form-{{ section.id }}');
-              const cartMessage = document.getElementById('cart-message-{{ section.id }}');
-            
-              function updateCartIcon() {
-                fetch('/cart.js')
-                  .then(response => response.json())
-                  .then(cart => {
-                    const cartCount = cart.item_count;
-                    const cartIcon = document.getElementById('cart-icon');
-                    
-                    // Update cart icon display
-                    if (cartIcon) {
-                      cartIcon.setAttribute('data-count', cartCount);
-                      cartIcon.innerHTML = `Cart (${cartCount})`;
-                    }
-                  })
-                  .catch(error => console.error('Error updating cart icon:', error));
-              }
-            
-              if (form) {
-                form.addEventListener('submit', function(event) {
-                  event.preventDefault();
-                  
-                  const formData = new FormData(form);
-                  
-                  fetch('/cart/add.js', {
-                    method: 'POST',
-                    body: new URLSearchParams(formData),
-                    headers: {
-                      'Content-Type': 'application/x-www-form-urlencoded',
-                    },
-                  })
-                  .then(response => response.json())
-                  .then(data => {
-                    cartMessage.innerHTML = 'Item added to cart!';
-                    updateCartIcon(); // Update the cart icon after adding an item
-                  })
-                  .catch(error => {
-                    cartMessage.innerHTML = 'There was a problem adding the item to the cart.';
-                    console.error('Error:', error);
-                  });
-                });
-              }
-            });
-            </script>
-            
       </div>
       <div>
         <div class="tld-bg-[#F6F6F6] tld-w-max tld-py-2 tld-px-5 tld-rounded-[20px] tld-flex tld-gap-5 tld-items-center tld-relative">

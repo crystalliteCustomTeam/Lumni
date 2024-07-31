@@ -592,8 +592,32 @@ video {
   }
 }
 
+.tld-absolute {
+  position: absolute;
+}
+
 .tld-relative {
   position: relative;
+}
+
+.tld-bottom-0 {
+  bottom: 0px;
+}
+
+.tld-left-0 {
+  left: 0px;
+}
+
+.tld-right-0 {
+  right: 0px;
+}
+
+.tld-top-0 {
+  top: 0px;
+}
+
+.tld-right-10 {
+  right: 2.5rem;
 }
 
 .tld-col-span-12 {
@@ -813,6 +837,10 @@ video {
 
 .tld-gap-5 {
   gap: 1.25rem;
+}
+
+.tld-gap-10 {
+  gap: 2.5rem;
 }
 
 .tld-overflow-hidden {
