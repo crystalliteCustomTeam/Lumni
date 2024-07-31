@@ -115,7 +115,7 @@ li#Slide-template--23080367817025__multicolumn_rhRtd4-4 {
     flex-direction: column-reverse;
 }
 }
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   #shopify-section-template--23080367817025__image_with_text_gg37wC .image-with-text__media.image-with-text__media--small.global-media-settings.background-transparent.media {
         margin-top: 0px !important;
         height: 30rem;
