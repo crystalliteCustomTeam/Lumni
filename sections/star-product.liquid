@@ -1,38 +1,184 @@
 <div class="tld-py-[90px]">
-    <div class="tld-container">
-        <div class="tld-my-10">
-            <h2 class="tld-text-black tld-text-[40px] tld-text-center">{{ section.settings.lumni-featured-product-title }}</h2>
-        </div>
-        <div class="tld-grid tld-grid-cols-2 tld-gap-5">
-            <div>
-
-            </div>
-        </div>
+  <div class="tld-container">
+    <div class="tld-mt-10">
+      <h2 class="tld-text-black tld-text-[40px] tld-text-center">
+        {{ section.settings['lumni-featured-product-title'] }}
+      </h2>
     </div>
+    <div class="tld-grid tld-grid-cols-2 tld-gap-5 tld-mt-20">
+      <div class="tld-relative">
+        <img
+          src="{{ section.settings.lumni-featured-product-image | image_url  }}"
+          width="620"
+          height="680"
+          class="tld-mx-auto"
+        >
+        {% if section.settings['lumni-featured-product-item'] %}
+          {% assign product = all_products[section.settings['lumni-featured-product-item']] %}
+          <p>Product ID: {{ product.variants.first.id }}</p>
+          <!-- Debugging -->
+          <!-- Add to Cart Form -->
+          <form id="add-to-cart-form-{{ section.id }}">
+            <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+            <div class="tld-bg-[#C7DBC6] md:tld-py-3 md:tld-px-5 lg:tld-py-5 lg:tld-px-8  md:tld-mt-5 lg:tld-mt-10 tld-rounded-[30px] tld-w-max ">
+              <button type="submit" id="add-to-cart-button-{{ section.id }}" class="md:tld-text-[12px] lg:tld-text-[15px] xl:tld-text-[17px] tld-text-black  tld-flex tld-gap-5">
+                Add to Cart
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 64 64"
+                  class="md:tld-w-[18px] md:tld-h-[18px] lg:tld-w-[24px] lg:tld-h-[24px]"
+                >
+                  <path
+                      d="M48 16h-4v-4c0-6.6-5.4-12-12-12S20 5.4 20 12v4h-4c-2.2 0-4 1.8-4 4v36c0 2.2 1.8 4 4 4h32c2.2 0 4-1.8 4-4V20c0-2.2-1.8-4-4-4zM24 12c0-4.4 3.6-8 8-8s8 3.6 8 8v4H24v-4zm24 44H16V20h4v4h4v-4h16v4h4v-4h4v36z"
+                      fill="#000000" />
+                </svg>
+              </button>
+            </div>
+          </form>
+
+          <div id="cart-message-{{ section.id }}"></div>
+        {% else %}
+          <p>No product selected.</p>
+        {% endif %}
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              const form = document.getElementById('add-to-cart-form-{{ section.id }}');
+              const cartMessage = document.getElementById('cart-message-{{ section.id }}');
+            
+              function updateCartIcon() {
+                fetch('/cart.js')
+                  .then(response => response.json())
+                  .then(cart => {
+                    const cartCount = cart.item_count;
+                    const cartIcon = document.getElementById('cart-icon');
+                    
+                    // Update cart icon display
+                    if (cartIcon) {
+                      cartIcon.setAttribute('data-count', cartCount);
+                      cartIcon.innerHTML = `Cart (${cartCount})`;
+                    }
+                  })
+                  .catch(error => console.error('Error updating cart icon:', error));
+              }
+            
+              if (form) {
+                form.addEventListener('submit', function(event) {
+                  event.preventDefault();
+                  
+                  const formData = new FormData(form);
+                  
+                  fetch('/cart/add.js', {
+                    method: 'POST',
+                    body: new URLSearchParams(formData),
+                    headers: {
+                      'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                  })
+                  .then(response => response.json())
+                  .then(data => {
+                    cartMessage.innerHTML = 'Item added to cart!';
+                    updateCartIcon(); // Update the cart icon after adding an item
+                  })
+                  .catch(error => {
+                    cartMessage.innerHTML = 'There was a problem adding the item to the cart.';
+                    console.error('Error:', error);
+                  });
+                });
+              }
+            });
+            </script>
+            
+      </div>
+      <div>
+        <div class="tld-bg-[#F6F6F6] tld-w-max tld-py-2 tld-px-5 tld-rounded-[20px] tld-flex tld-gap-5 tld-items-center tld-relative">
+          <img
+            src="{{ 'stars.png' | asset_url  | image_tag : "stars" }}"
+            width="90"
+            height="17"
+            class="tld-w-[90px] tld-h-[17px]"
+          >
+          <span class="tld-text-[17px]">{{ section.settings['lumni-featured-product-reviews'] }} reviews</span>
+        </div>
+        <div class="tld-my-10">
+          <p class="tld-text-[15px] tld-font-light">{{ section.settings['lumni-featured-top-description'] }}</p>
+          <hr class="tld-my-10">
+          <div class="[&>ul]:tld-list-disc [&>ul>li]:tld-leading-loose  [&>ul]:tld-list-inside tld-my-8 tld-text-[15px]">
+            {{- section.settings['lumni-featured-bottom-description'] -}}
+          </div>
+          <p class="tld-text-[15px] tld-font-light">{{ section.settings['lumni-featured-middle-description'] }}</p>
+          <img
+            src="{{ 'featured.png' | asset_url  | image_tag : "stars" }}"
+            width="555"
+            height="177"
+            class="tld-mt-10 "
+          >
+          <img src="{{ 'discount.png' | asset_url  | image_tag : "stars" }}" width="210" height="87" class="tld-mt-10 ">
+          <div class="tld-flex tld-justify-between tld-items-center tld-mt-10">
+            <p class="tld-text-[13px]">{{ section.settings['lumni-featured-ending-description'] }}</p>
+            <img src="{{ 'shoppay.png' | asset_url  | image_tag : "stars" }}" width="136" height="31" class=" ">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 {% schema %}
+{
+  "name": "Lumni Featured Project",
+  "tag": "section",
+  "class": "lumni-star-featured-project",
+  "settings": [
     {
-        "name": "Lumni Featured Project",
-        "tag": "section",
-        "class": "lumni-star-featured-project",
-        "settings": [
-            {
-                "type": "text",
-                "id": "lumni-featured-product-title",
-                "label": "Featured Section Title",
-                "default" : "Voted #1 Microneedling Device of 2024"
-            },
-            {
-                "type": "product",
-                "id": "lumni-featured-product-item",
-                "label": "Lumni Featured Product",
-            }
-        ],
-        "presets": [
-            {
-                "name": "Lumni Featured Product"
-            }
-        ]
+      "type": "text",
+      "id": "lumni-featured-product-title",
+      "label": "Featured Section Title",
+      "default": "Voted #1 Microneedling Device of 2024"
+    },
+    {
+      "type": "text",
+      "id": "lumni-featured-product-reviews",
+      "label": "Reviews Counter",
+      "default": "182"
+    },
+    {
+      "type": "text",
+      "id": "lumni-featured-top-description",
+      "label": "Top Descriptions",
+      "default": "Our 2x award-winning Microneedling Pen contains five sterile cartridges (factory sealed) and a portable charger. All combined together in one elegant gift box."
+    },
+    {
+      "type": "richtext",
+      "id": "lumni-featured-bottom-description",
+      "label": "Middle Descriptions"
+    },
+    {
+      "type": "text",
+      "id": "lumni-featured-middle-description",
+      "label": "Bottom Descriptions",
+      "default": "Transform your skin with this simple cosmetic procedure that can be done at home with easy to follow instructions."
+    },
+    {
+      "type": "text",
+      "id": "lumni-featured-ending-description",
+      "label": "End Descriptions",
+      "default": "Free fast shipping* • Complete Instructions • 1-Year Warranty "
+    },
+    {
+      "type": "image_picker",
+      "id": "lumni-featured-product-image",
+      "label": "Lumni Featured Product Image"
+    },
+    {
+      "type": "product",
+      "id": "lumni-featured-product-item",
+      "label": "Lumni Featured Product"
     }
+  ],
+  "presets": [
+    {
+      "name": "Lumni Featured Product"
+    }
+  ]
+}
 {% endschema %}
