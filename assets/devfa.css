@@ -75,6 +75,22 @@ li#Slide-template--23080367817025__multicolumn_rhRtd4-4 {
 #shopify-section-template--23080367817025__image_with_text_gg37wC .image-with-text__media.image-with-text__media--small.global-media-settings.background-transparent.media {
     margin-top: -130px !important;
 }
+  li#Slide-template--23080367817025__multicolumn_rhRtd4-1 {
+    width: 50% !important;
+    max-width: 50%;
+}
+li#Slide-template--23080367817025__multicolumn_rhRtd4-2 {
+    width: 50% !important;
+    max-width: 50%;
+}
+li#Slide-template--23080367817025__multicolumn_rhRtd4-3 {
+    width: 50% !important;
+    max-width: 50%;
+}
+li#Slide-template--23080367817025__multicolumn_rhRtd4-4 {
+    width: 50% !important;
+    max-width: 50%;
+}
 }
 @media (max-width: 1080px) {
   #shopify-section-template--23080367817025__image_with_text_gg37wC div#ImageWithText--template--23080367817025__image_with_text_gg37wC {
