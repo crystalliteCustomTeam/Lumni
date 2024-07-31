@@ -1,0 +1,132 @@
+<div class="tld-py-[90px]">
+  <div class="tld-container">
+    <div class="tld-grid tld-grid-cols-2 tld-gap-5">
+      <div>
+        <div>
+          <h2 class="tld-text-[135px] tld-py-8">{{ section.settings['lumni-middle-banner-title'] }}</h2>
+          {% if section.settings['lumni-middle-banner-rating'] == 'enable' %}
+            <div class="tld-bg-[#F6F6F6] tld-p-5 tld-rounded-[30px] tld-w-max tld-my-6">
+              <div class="tld-flex tld-gap-3 tld-items-center">
+                <div class="tld-flex tld-items-center xs:tld-w-[50px] tld-w-[80px]">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px">
+                    <path
+                        d="M12 .587l3.668 7.425 8.21 1.193-5.92 5.762 1.397 8.158L12 18.897l-7.355 3.864 1.397-8.158-5.92-5.762 8.21-1.193L12 .587z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px">
+                    <path
+                        d="M12 .587l3.668 7.425 8.21 1.193-5.92 5.762 1.397 8.158L12 18.897l-7.355 3.864 1.397-8.158-5.92-5.762 8.21-1.193L12 .587z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px">
+                    <path
+                        d="M12 .587l3.668 7.425 8.21 1.193-5.92 5.762 1.397 8.158L12 18.897l-7.355 3.864 1.397-8.158-5.92-5.762 8.21-1.193L12 .587z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px">
+                    <path
+                        d="M12 .587l3.668 7.425 8.21 1.193-5.92 5.762 1.397 8.158L12 18.897l-7.355 3.864 1.397-8.158-5.92-5.762 8.21-1.193L12 .587z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD700" width="24px">
+                    <path
+                        d="M12 .587l3.668 7.425 8.21 1.193-5.92 5.762 1.397 8.158L12 18.897l-7.355 3.864 1.397-8.158-5.92-5.762 8.21-1.193L12 .587z" />
+                  </svg>
+                </div>
+                <p class="xs:tld-text-[12px] tld-text-[15px] md:tld-text-[12px] lg:tld-text-[14px] xl:tld-text-[15px] tld-leading-none">
+                  Trusted by hundreds of customers
+                </p>
+              </div>
+            </div>
+          {% endif %}
+          <h3 class="tld-text-[40px] tld-py-5">{{ section.settings['lumni-middle-banner-subtitle'] }}</h3>
+          <p class="tld-text-[15px] tld-text-black">{{ section.settings['lumni-middle-banner-description'] }}</p>
+          <div class="tld-bg-[#C7DBC6]  md:tld-py-3  tld-px-10 tld-py-2 sm:tld-px-5 sm:tld-py-5 md:tld-px-5 lg:tld-py-5 lg:tld-px-8 tld-mt-5  md:tld-mt-5 lg:tld-mt-10 tld-rounded-[30px] tld-w-max ">
+            <a
+              href="{{ section.settings.lumni-middle-banner-url}}"
+              class="md:tld-text-[12px] lg:tld-text-[15px] xl:tld-text-[17px] tld-text-black  tld-flex tld-gap-5"
+            >
+              {{- section.settings['lumni-middle-banner-urltext'] }}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 64 64"
+                class="tld-w-[24px] tld-h-[24px]   md:tld-w-[18px] md:tld-h-[18px] lg:tld-w-[24px] lg:tld-h-[24px]"
+              >
+                <path
+                    d="M48 16h-4v-4c0-6.6-5.4-12-12-12S20 5.4 20 12v4h-4c-2.2 0-4 1.8-4 4v36c0 2.2 1.8 4 4 4h32c2.2 0 4-1.8 4-4V20c0-2.2-1.8-4-4-4zM24 12c0-4.4 3.6-8 8-8s8 3.6 8 8v4H24v-4zm24 44H16V20h4v4h4v-4h16v4h4v-4h4v36z"
+                    fill="#000000" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="tld-flex tld-justify-end">
+          <img src="{{  section.settings.lumni-middle-banner-featuredimg  | image_url  }}" width="453" height="670">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Lumni Home Middle Banner",
+  "tag": "section",
+  "class": "lumni-middle-banner",
+  "settings": [
+    {
+      "type": "text",
+      "id": "lumni-middle-banner-title",
+      "label": "Lumni Middle Banner Title",
+      "default": "By Lumni"
+    },
+    {
+      "type": "select",
+      "id": "lumni-middle-banner-rating",
+      "label": "Lumni Middle Banner Rating",
+      "options": [
+        {
+          "value": "enable",
+          "label": "Enable"
+        },
+        {
+          "value": "disable",
+          "label": "Disable"
+        }
+      ],
+      "default": "enable"
+    },
+    {
+      "type": "text",
+      "id": "lumni-middle-banner-subtitle",
+      "label": "Lumni Middle Banner Subtitle",
+      "default": "Hydro Dermabrasion"
+    },
+    {
+      "type": "textarea",
+      "id": "lumni-middle-banner-description",
+      "label": "Lumni Middle Banner Description",
+      "default": "You’ve probably heard of microdermabrasion which provides a deeper exfoliation thanks to the diamond crystal head. Hydro dermabrasion is a more gentle way to do just that, which makes it suitable for the most sensitive skin types too."
+    },
+    {
+      "type": "image_picker",
+      "id": "lumni-middle-banner-featuredimg",
+      "label": "Lumni Middle Banner Featured image"
+    },
+    {
+      "type": "url",
+      "id": "lumni-middle-banner-url",
+      "label": "Lumni Middle Banner Url"
+    },
+    {
+      "type": "text",
+      "id": "lumni-middle-banner-urltext",
+      "label": "Lumni Middle Banner Url Text",
+      "default": "Shop All"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Lumni Middle Banner"
+    }
+  ]
+}
+{% endschema %}
