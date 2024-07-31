@@ -1,29 +1,29 @@
 <div class="tld-py-[90px]">
   <div class="tld-container">
     <div class="tld-mt-10">
-      <h2 class="tld-text-black tld-text-[40px] tld-text-center">
+      <h2 class="tld-text-black xs:tld-text-[16px] md:tld-text-[30px] lg:tld-text-[40px] tld-text-center">
         {{ section.settings['lumni-featured-product-title'] }}
       </h2>
     </div>
-    <div class="tld-grid tld-grid-cols-2 tld-gap-10 tld-mt-20">
+    <div class="tld-grid tld-grid-cols-1  md:tld-grid-cols-2 tld-gap-10 tld-mt-20">
       <div class="tld-relative">
         <img
           src="{{ section.settings.lumni-featured-product-image | image_url  }}"
           width="620"
           height="680"
-          class="tld-mx-auto tld-w-full"
+          class="tld-mx-auto  tld-w-full "
         >
         {% if section.settings['lumni-featured-product-item'] %}
           {% assign product = all_products[section.settings['lumni-featured-product-item']] %}
-          <div class="tld-absolute tld-top-0  tld-right-10 ">
+          <div class="tld-absolute xs:tld-top-[10px] xs:tld-right-5 tld-top-[30px] md:tld-top-0  tld-right-10 ">
             <form id="add-to-cart-form-{{ section.id }} " method="post" action="/cart/add">
               <input type="hidden" name="id" value="{{ product.variants.first.id }}">
               <input type="hidden" id="quantity" name="quantity" value="1">
-              <div class="tld-bg-[#C7DBC6] md:tld-py-3 md:tld-px-5 lg:tld-py-5 lg:tld-px-8  md:tld-mt-5 lg:tld-mt-10 tld-rounded-[30px] tld-w-max ">
+              <div class=" tld-bg-black tld-py-3 tld-px-[25px] lg:tld-py-3 lg:tld-px-5  md:tld-mt-5 lg:tld-mt-10 tld-rounded-[30px] md:tld-w-max ">
                 <button
                   type="submit"
                   name="add"
-                  class="md:tld-text-[12px] lg:tld-text-[15px] xl:tld-text-[17px] tld-text-black  tld-flex tld-gap-5"
+                  class="tld-w-full tld-text-[12px] lg:tld-text-[15px] xl:tld-text-[17px] tld-text-white  tld-flex tld-gap-3"
                   {% if product.available == false %}
                     disabled
                   {% endif %}
@@ -34,11 +34,11 @@
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 64 64"
-                    class="md:tld-w-[18px] md:tld-h-[18px] lg:tld-w-[24px] lg:tld-h-[24px]"
+                    class="tld-w-[18px] tld-h-[18px] lg:tld-w-[24px] lg:tld-h-[24px] tld-text-white"
                   >
                     <path
                         d="M48 16h-4v-4c0-6.6-5.4-12-12-12S20 5.4 20 12v4h-4c-2.2 0-4 1.8-4 4v36c0 2.2 1.8 4 4 4h32c2.2 0 4-1.8 4-4V20c0-2.2-1.8-4-4-4zM24 12c0-4.4 3.6-8 8-8s8 3.6 8 8v4H24v-4zm24 44H16V20h4v4h4v-4h16v4h4v-4h4v36z"
-                        fill="#000000" />
+                        fill="#ffffff" />
                   </svg>
                 </button>
               </div>
@@ -52,33 +52,33 @@
           <p>No product selected.</p>
         {% endif %}
       </div>
-      <div>
-        <div class="tld-bg-[#F6F6F6] tld-w-max tld-py-2 tld-px-5 tld-rounded-[20px] tld-flex tld-gap-5 tld-items-center tld-relative">
+      <div class="md:tld-h-[400px] md:tld-overflow-y-scroll md:tld-overflow-hidden lg:tld-h-full lg:tld-overflow-auto  ">
+        <div class="tld-bg-[#F6F6F6] tld-w-max tld-py-2 tld-px-5 tld-rounded-[20px] tld-flex tld-gap-3 lg:tld-gap-5 tld-items-center tld-relative">
           <img
             src="{{ 'stars.png' | asset_url  | image_tag : "stars" }}"
             width="90"
             height="17"
-            class="tld-w-[90px] tld-h-[17px]"
+            class=" md:tld-w-[50px] md:tld-h-[15px] lg:tld-w-[90px] lg:tld-h-[17px]"
           >
-          <span class="tld-text-[17px]">{{ section.settings['lumni-featured-product-reviews'] }} reviews</span>
+          <span class="md:tld-text-[13px]  lg:tld-text-[17px]">{{ section.settings['lumni-featured-product-reviews'] }} reviews</span>
         </div>
-        <div class="tld-my-10">
-          <p class="tld-text-[15px] tld-font-light">{{ section.settings['lumni-featured-top-description'] }}</p>
-          <hr class="tld-my-10">
-          <div class="[&>ul]:tld-list-disc [&>ul>li]:tld-leading-loose  [&>ul]:tld-list-inside tld-my-8 tld-text-[15px]">
+        <div class=" tld-my-3 xl:tld-my-5 2xl:tld-my-10">
+          <p class="tld-text-[12px] lg:tld-text-[14px] 2xl:tld-text-[15px] tld-font-light">{{ section.settings['lumni-featured-top-description'] }}</p>
+          <hr class=" tld-my-3 xl:tld-my-5 2xl:tld-my-10">
+          <div class="[&>ul]:tld-list-disc [&>ul>li]:tld-leading-loose  [&>ul]:tld-list-inside tld-my-8 tld-text-[12px] lg:tld-text-[14px] 2xl:tld-text-[15px]">
             {{- section.settings['lumni-featured-bottom-description'] -}}
           </div>
-          <p class="tld-text-[15px] tld-font-light">{{ section.settings['lumni-featured-middle-description'] }}</p>
+          <p class="tld-text-[12px] lg:tld-text-[14px] 2xl:tld-text-[15px] tld-font-light">{{ section.settings['lumni-featured-middle-description'] }}</p>
           <img
             src="{{ 'featured.png' | asset_url  | image_tag : "stars" }}"
             width="555"
             height="177"
-            class="tld-mt-10 "
+            class="tld-my-3 xl:tld-my-5 2xl:tld-my-10 lg:tld-w-[455px] lg:tld-h-[100px] xl:tld-w-[555px] xl:tld-h-full  "
           >
-          <img src="{{ 'discount.png' | asset_url  | image_tag : "stars" }}" width="210" height="87" class="tld-mt-10 ">
-          <div class="tld-flex tld-justify-between tld-items-center tld-mt-10">
-            <p class="tld-text-[13px]">{{ section.settings['lumni-featured-ending-description'] }}</p>
-            <img src="{{ 'shoppay.png' | asset_url  | image_tag : "stars" }}" width="136" height="31" class=" ">
+          <img src="{{ 'discount.png' | asset_url  | image_tag : "stars" }}" width="210" height="87" class=" tld-my-3 xl:tld-my-5 2xl:tld-my-10 md:tld-w-[130px] lg:tld-w-[170px] tld-h-full xl:tld-w-[210px] xl:tld-h-full ">
+          <div class="tld-flex tld-justify-between tld-items-center  tld-my-3 xl:tld-my-5 2xl:tld-my-10">
+            <p class="tld-text-[7px] lg:tld-text-[11px] xl:tld-text-[13px]">{{ section.settings['lumni-featured-ending-description'] }}</p>
+            <img src="{{ 'shoppay.png' | asset_url  | image_tag : "stars" }}" width="100" height="31" class=" ">
           </div>
         </div>
       </div>
