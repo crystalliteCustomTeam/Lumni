@@ -1,36 +1,80 @@
 <div class="tld-bg-[#F8F8F6] tld-py-[90px]">
-    <div class="tld-container">
-        <div>
-            <h2 class="tld-text-[40px] tld-text-center">{{ section.settings.lumni-collection-product-title }}</h2>
-        </div>
-        <div>
-           
-        </div>
+  <div class="tld-container">
+    <div>
+      <h2 class="lg:tld-text-[30px] xl:tld-text-[40px] tld-text-center">{{ section.settings['lumni-collection-product-title'] }}</h2>
     </div>
+    <div class="tld-mt-20">
+      <div class="tld-grid tld-grid-cols-2 sm:tld-grid-cols-2 md:tld-grid-cols-4 tld-gap-5">
+        {% for product in section.settings['lumni-collection-products'].products limit: 4 %}
+          <div class="tld-bg-white tld-rounded-[20px] tld-pb-10 tld-mx-auto ">
+            <div class="tld-my-10">
+                <img src="{{ product.featured_image | image_url }}" width="300" height="214" alt="{{ product.title }}" class="tld-w-full">
+            </div>
+            <div class="tld-px-12 tld-my-8  tld-overflow-hidden">
+                <h2 class="xs:tld-text-[13px] sm:tld-text-[15px] md:tld-text-[12px] lg:tld-text-[14px] xl:tld-text-[17px] tld-text-center">  {{ product.title | truncate: 25, "..." }}</h2>
+            </div>
+            <div class="tld-w-full tld-border-t tld-border-dashed tld-border-[#E1E1E1] tld-pt-5">
+                {% assign currency_symbol = shop.currency | upcase %}
+
+                <h2 class="md:tld-text-[18px] lg:tld-text-[20px] xl:tld-text-[25px] tld-text-center tld-font-bold">
+                  {% case currency_symbol %}
+                    {% when 'USD' %}
+                      ${{ product.price | money_without_currency }}
+                    {% when 'EUR' %}
+                      €{{ product.price | money_without_currency }}
+                    {% when 'GBP' %}
+                      £{{ product.price | money_without_currency }}
+                    {% else %}
+                      {{ product.price | money }}
+                  {% endcase %}
+                </h2>
+            </div>
+            <div class="tld-bg-[#C7DBC6]  md:tld-py-3  tld-px-5 tld-py-2 sm:tld-px-5 sm:tld-py-5 md:tld-px-5 lg:tld-py-3 lg:tld-px-8 tld-mt-5  md:tld-mt-5 lg:tld-mt-10 tld-rounded-[15px] tld-w-max tld-mx-auto">
+                <a
+                  href="{{ product.url }}"
+                  class="md:tld-text-[12px] lg:tld-text-[15px] xl:tld-text-[17px] tld-text-black  tld-flex tld-gap-5"
+                >
+                 Add To Cart
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 64 64"
+                    class="tld-w-[24px] tld-h-[24px]   md:tld-w-[18px] md:tld-h-[18px] lg:tld-w-[24px] lg:tld-h-[24px]"
+                  >
+                    <path
+                        d="M48 16h-4v-4c0-6.6-5.4-12-12-12S20 5.4 20 12v4h-4c-2.2 0-4 1.8-4 4v36c0 2.2 1.8 4 4 4h32c2.2 0 4-1.8 4-4V20c0-2.2-1.8-4-4-4zM24 12c0-4.4 3.6-8 8-8s8 3.6 8 8v4H24v-4zm24 44H16V20h4v4h4v-4h16v4h4v-4h4v36z"
+                        fill="#000000" />
+                  </svg>
+                </a>
+              </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
 </div>
 
 {% schema %}
 {
-    "name": "Lumni Collection Products",
-    "tag": "section",
-    "class": "lumni-collection-products",
-    "settings": [
-        {
-            "type": "text",
-            "id": "lumni-collection-product-title",
-            "label": "Lumni Collection Title",
-            "default":"Clinical Grade Microneedling serums",
-        },
-        {
-            "type": "collection",
-            "id": "lumni-collection-products",
-            "label": "Lumni Collection products",
-        },
-    ],
-    "presets": [
-        {
-            "name": "Lumni Collection Products"
-        }
-    ]
+  "name": "Lumni Collection Products",
+  "tag": "section",
+  "class": "lumni-collection-products",
+  "settings": [
+    {
+      "type": "text",
+      "id": "lumni-collection-product-title",
+      "label": "Lumni Collection Title",
+      "default": "Clinical Grade Microneedling serums"
+    },
+    {
+      "type": "collection",
+      "id": "lumni-collection-products",
+      "label": "Lumni Collection products"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Lumni Collection Products"
+    }
+  ]
 }
 {% endschema %}

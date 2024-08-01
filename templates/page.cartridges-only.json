@@ -28,11 +28,67 @@
         "lumni-marquee-text": "Spring Sale On Now",
         "lumni-marquee-background": "#000000"
       }
+    },
+    "multicolumn_fRCByV": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_xyMPKj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/noun-shipping-5125536.png",
+            "title": "Fast & Free Shipping",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_ximgWY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_830.png",
+            "title": "Low Price Guarantee",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_JM9Fkb": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_xyMPKj",
+        "column_ximgWY",
+        "column_JM9Fkb"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "hero_banner_VBrUG7",
-    "announcement_bar_custom_WM37Tg"
+    "announcement_bar_custom_WM37Tg",
+    "multicolumn_fRCByV"
   ]
 }
