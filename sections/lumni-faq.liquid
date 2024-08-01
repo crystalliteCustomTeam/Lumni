@@ -1,0 +1,162 @@
+<div class=" tld-bg-black">
+  <div
+    class="tld-py-[90px] tld-bg-cover"
+    style="background-image:url('{{ section.settings.lumni-faq-bg | image_url }}')"
+  >
+    <div class="tld-container md:tld-pr-[18px]">
+      <div class="tld-grid tld-grid-cols-12 tld-gap-10 tld-p-[20px] md:tld-p-[50px] tld-w-full lg:tld-w-[90%] tld-ml-auto tld-backdrop-blur-xl  tld-bg-[#ffffff08] tld-rounded-[20px] tld-relative">
+        <div class="tld-hidden lg:tld-flex tld-col-span-4  tld-justify-center tld-items-center">
+          <img
+            src="{{ section.settings.lumni-faq-featuredImg | image_url  }}"
+            width="539"
+            height="539"
+            class="tld-absolute  tld-left-[-10%]  lg:tld-w-[400px] lg:tld-h-[400px] xl:tld-w-[490px] xl:tld-h-[490px] 2xl:tld-w-[539px] 2xl:tld-h-[539px]"
+          >
+        </div>
+        <div class="tld-col-span-12 lg:tld-col-span-8 md:tld-pl-10">
+          <h2 class="tld-text-white lg:tld-text-[25px] xl:tld-text-[35px] 2xl:tld-text-[40px]">{{ section.settings['lumni-faq-title'] }}</h2>
+          <p class="tld-text-white tld-text-[14px] 2xl:tld-text-[15px] tld-my-5">{{ section.settings['lumni-faq-description'] }}</p>
+          <div class="before:tld-backdrop-blur-xl  before:tld-bg-[#ffffff1f]  tld-py-[21px] tld-pl-[17px] tld-relative before:tld-content-[''] tld-z-0 before:tld-top-0 before:tld-left-0 before:tld-bottom-0 before:tld-right-0 before:tld-absolute before:-tld-mr-[0px] lg:before:-tld-mr-[68px] before:-tld-z-10 after:tld-content-[''] after:tld-bg-[url(/assets/tri.png)] after:tld-bg-contain after:tld-w-[18px] after:tld-h-[14px] after:tld-hidden lg:after:tld-block after:tld-right-[-68px] after:tld-top-full after:tld-absolute after:tld-bg-no-repeat">
+            <div class="tld-flex tld-gap-3 2xl:tld-gap-5 tld-flex-wrap">
+              {% for block in section.blocks %}
+                {% if block.type == 'features' %}
+                  <div class="tld-w-max tld-py-3 tld-px-5 2xl:tld-px-8 tld-rounded-lg tld-flex tld-gap-5 tld-backdrop-blur-xl  tld-bg-[#ffffff00] tld-items-center">
+                    <div>
+                      <img
+                        src="{{ block.settings['lumni-product-features-image'] | image_url }}"
+                        width="27"
+                        height="20"
+                        class="tld-h-[20px] tld-object-contain tld-object-center"
+                      >
+                    </div>
+                    <p class="tld-text-white xl:tld-text-[10px]  2xl:tld-text-[13px]">{{ block.settings['lumni-product-features-text'] }}</p>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+          <div class="tld-accordion tld-mt-8 2xl:tld-mt-10">
+            <!-- Accordion Item 1 -->
+            {% for block in section.blocks %}
+              {% if block.type == 'faq' %}
+                <div class="tld-border-b  tld-rounded tld-py-2">
+                  <button class="tld-accordion-header tld-flex tld-justify-between tld-items-center tld-w-full tld-py-4 tld-text-white ">
+                    <span class="tld-text-[14px] 2xl:tld-text-[15px]">{{ block.settings['lumni-product-faq-question'] }}</span>
+                    <svg
+                      class="tld-w-6 tld-h-6 tld-transform tld-rotate-0 tld-transition-transform tld-duration-300"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                  </button>
+                  <div class="tld-accordion-content tld-hidden tld-py-4 ">
+                    <p class="tld-text-white tld-text-[12px]">{{ block.settings['lumni-product-faq-answer'] }}</p>
+                  </div>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.querySelectorAll('.tld-accordion-header').forEach((header) => {
+    header.addEventListener('click', () => {
+      const content = header.nextElementSibling;
+      const isOpen = !content.classList.contains('tld-hidden');
+
+      // Close all accordion items
+      document.querySelectorAll('.tld-accordion-content').forEach((item) => {
+        item.classList.add('tld-hidden');
+      });
+      document.querySelectorAll('.tld-accordion-header svg').forEach((icon) => {
+        icon.classList.remove('tld-rotate-180');
+      });
+
+      if (!isOpen) {
+        content.classList.remove('tld-hidden');
+        header.querySelector('svg').classList.add('tld-rotate-180');
+      }
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Lumni Faq",
+  "tag": "section",
+  "class": "Lumni-Faq-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "lumni-faq-title",
+      "label": "Lumni FAQ Title",
+      "default": "Advanced Microneedling that promises results!"
+    },
+    {
+      "type": "text",
+      "id": "lumni-faq-description",
+      "label": "Lumni FAQ Description",
+      "default": "Enjoy endless clinical-level skincare at your convenience at much lower cost."
+    },
+    {
+      "type": "image_picker",
+      "id": "lumni-faq-featuredImg",
+      "label": "Lumni FAQ Featured Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "lumni-faq-bg",
+      "label": "Lumni FAQ Background Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "features",
+      "name": "Lumni Product Features",
+      "settings": [
+        {
+          "type": "text",
+          "id": "lumni-product-features-text",
+          "label": "Lumni Product Feature Text",
+          "default": "Smooth fine lines"
+        },
+        {
+          "type": "image_picker",
+          "id": "lumni-product-features-image",
+          "label": "Lumni Product Feature Image"
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "name": "Lumni Product Faq",
+      "settings": [
+        {
+          "type": "text",
+          "id": "lumni-product-faq-question",
+          "label": "Lumni Product Question Text",
+          "default": "Smooth fine lines"
+        },
+        {
+          "type": "textarea",
+          "id": "lumni-product-faq-answer",
+          "label": "Lumni Product Answer Text",
+          "default": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Lumni FAQ "
+    }
+  ]
+}
+{% endschema %}
