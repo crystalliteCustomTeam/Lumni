@@ -1,0 +1,38 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "hero_banner_VBrUG7": {
+      "type": "hero-banner",
+      "settings": {
+        "lumni-hero-section-background": "shopify:\/\/shop_images\/abstract-colorful-blurry-background_9e6223a0-07e4-4b2b-a410-cf6a3f1f13cb.png",
+        "lumni_rating_stars": "disabled",
+        "lumni-hero-tagline-id": "Micro Needling Pen uses Bayonet",
+        "lumni-hero-heading-id": "Cartridges Only",
+        "lumni-hero-para-id": "",
+        "lumni-shop-text-id": "Shop All Microneedling Pens",
+        "lumni-shop-url-id": "#",
+        "lumni-hero-section-image": "shopify:\/\/shop_images\/Group_840.png",
+        "lumni-shop-addon-text-id": "🤞 Free Shipping: Fast Free Shipping With All Orders Above $39"
+      }
+    },
+    "announcement_bar_custom_WM37Tg": {
+      "type": "announcement-bar-custom",
+      "settings": {
+        "lumni-marquee-text": "Spring Sale On Now",
+        "lumni-marquee-background": "#000000"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hero_banner_VBrUG7",
+    "announcement_bar_custom_WM37Tg"
+  ]
+}

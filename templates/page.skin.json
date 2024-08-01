@@ -1,0 +1,99 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "hero_banner_VbW7CK": {
+      "type": "hero-banner",
+      "settings": {
+        "lumni-hero-section-background": "shopify:\/\/shop_images\/Component_9_1.png",
+        "lumni_rating_stars": "disabled",
+        "lumni-hero-tagline-id": "Transform Your",
+        "lumni-hero-heading-id": "Skin",
+        "lumni-hero-para-id": "Introducing Lumni's cutting-edge microneedling pen, the ultimate solution for at-home microneedling treatments.",
+        "lumni-shop-text-id": "Shop All Microneedling Pens",
+        "lumni-shop-url-id": "#",
+        "lumni-hero-section-image": "shopify:\/\/shop_images\/Group_1093.png",
+        "lumni-shop-addon-text-id": "🤞 Free Shipping: Fast Free Shipping With All Orders Above $39"
+      }
+    },
+    "announcement_bar_custom_RGzy89": {
+      "type": "announcement-bar-custom",
+      "settings": {
+        "lumni-marquee-text": "Spring Sale On Now",
+        "lumni-marquee-background": "#000000"
+      }
+    },
+    "editor_3Hkx87": {
+      "type": "editor",
+      "settings": {
+        "lumni-editor": "enable"
+      }
+    },
+    "image_with_text_HWydRQ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_QKM7QJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Wrinkles, Dullness, crepy skin - Yes Microneedling does it all",
+            "heading_size": "h1"
+          }
+        },
+        "text_mNjeTJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Microneedling has indeed become a popular and versatile solution for various skin concerns, evolving from a treatment exclusive to dermatologist offices to a more accessible at-home solution.<br\/><br\/>This technique is known for its ability to address multiple skin issues, such as wrinkles, dullness, and uneven texture.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_YVATHA": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop All Microneedling Pens",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_QKM7QJ",
+        "text_mNjeTJ",
+        "button_YVATHA"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 750px) {.image-with-text__media--small {height: 52rem; }}",
+        ".image-with-text__media.image-with-text__media--small.global-media-settings.background-transparent.media {margin-top: -60px; border: unset;}",
+        ".image-with-text__media.image-with-text__media--small.global-media-settings.background-transparent.media img {object-fit: contain; object-position: bottom;}",
+        "@media screen and (min-width: 990px) {div#ImageWithText--template--23101753262401__image_with_text_HWydRQ {padding: 6rem 4rem 4rem 0.5rem; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Group-1089-new_fab0c73a-506e-4402-8a66-d83b868e6647.png",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-4",
+        "color_scheme": "scheme-4",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hero_banner_VbW7CK",
+    "announcement_bar_custom_RGzy89",
+    "editor_3Hkx87",
+    "image_with_text_HWydRQ"
+  ]
+}

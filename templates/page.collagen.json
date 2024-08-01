@@ -1,0 +1,45 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "hero_banner_ArxmEp": {
+      "type": "hero-banner",
+      "settings": {
+        "lumni-hero-section-background": "shopify:\/\/shop_images\/Dreamy_Abstract_Purple_Grainy_Gradient_Backgrounds_03.png",
+        "lumni_rating_stars": "disabled",
+        "lumni-hero-tagline-id": "Micro-infusion Facial System",
+        "lumni-hero-heading-id": "Collagen",
+        "lumni-hero-para-id": "",
+        "lumni-shop-text-id": "Shop All Microneedling Pens",
+        "lumni-shop-url-id": "#",
+        "lumni-hero-section-image": "shopify:\/\/shop_images\/Group_1089_397937c0-529e-4794-a7be-1856ab60b6a5.png",
+        "lumni-shop-addon-text-id": "🤞 Free Shipping: Fast Free Shipping With All Orders Above $39"
+      }
+    },
+    "announcement_bar_custom_3G8cfE": {
+      "type": "announcement-bar-custom",
+      "settings": {
+        "lumni-marquee-text": "Spring Sale On Now",
+        "lumni-marquee-background": "#000000"
+      }
+    },
+    "editor_CqGY4U": {
+      "type": "editor",
+      "settings": {
+        "lumni-editor": "enable"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hero_banner_ArxmEp",
+    "announcement_bar_custom_3G8cfE",
+    "editor_CqGY4U"
+  ]
+}

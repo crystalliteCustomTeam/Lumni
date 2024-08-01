@@ -138,6 +138,107 @@
         "padding_bottom": 0
       }
     },
+    "lumni_faq_ApdnxE": {
+      "type": "lumni-faq",
+      "blocks": {
+        "features_z4QbHJ": {
+          "type": "features",
+          "settings": {
+            "lumni-product-features-text": "Smooth fine lines",
+            "lumni-product-features-image": "shopify:\/\/shop_images\/finger.png"
+          }
+        },
+        "features_KkjR6d": {
+          "type": "features",
+          "settings": {
+            "lumni-product-features-text": "Fade blemishes",
+            "lumni-product-features-image": "shopify:\/\/shop_images\/drop.png"
+          }
+        },
+        "features_nRcXCn": {
+          "type": "features",
+          "settings": {
+            "lumni-product-features-text": "Decrease puffiness",
+            "lumni-product-features-image": "shopify:\/\/shop_images\/Decrease.png"
+          }
+        },
+        "features_c8ri99": {
+          "type": "features",
+          "settings": {
+            "lumni-product-features-text": "Lifted & Toned Appearance",
+            "lumni-product-features-image": "shopify:\/\/shop_images\/Lifted.png"
+          }
+        },
+        "features_47qKw8": {
+          "type": "features",
+          "settings": {
+            "lumni-product-features-text": "Boost skin’s glow",
+            "lumni-product-features-image": "shopify:\/\/shop_images\/Boost.png"
+          }
+        },
+        "features_tDrfzU": {
+          "type": "features",
+          "settings": {
+            "lumni-product-features-text": "Combat breakouts",
+            "lumni-product-features-image": "shopify:\/\/shop_images\/combo.png"
+          }
+        },
+        "faq_XH4A4q": {
+          "type": "faq",
+          "settings": {
+            "lumni-product-faq-question": "Is it safe to do Miconeedling at home?",
+            "lumni-product-faq-answer": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+          }
+        },
+        "faq_GqY669": {
+          "type": "faq",
+          "settings": {
+            "lumni-product-faq-question": "Does Microneedling really work?",
+            "lumni-product-faq-answer": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+          }
+        },
+        "faq_AcDfGj": {
+          "type": "faq",
+          "settings": {
+            "lumni-product-faq-question": "Will this help my Acne?",
+            "lumni-product-faq-answer": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+          }
+        },
+        "faq_bpHm8i": {
+          "type": "faq",
+          "settings": {
+            "lumni-product-faq-question": "I take blood thinners, can I use this?",
+            "lumni-product-faq-answer": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+          }
+        },
+        "faq_a7xEEG": {
+          "type": "faq",
+          "settings": {
+            "lumni-product-faq-question": "Does it hurt?",
+            "lumni-product-faq-answer": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+          }
+        }
+      },
+      "block_order": [
+        "features_z4QbHJ",
+        "features_KkjR6d",
+        "features_nRcXCn",
+        "features_c8ri99",
+        "features_47qKw8",
+        "features_tDrfzU",
+        "faq_XH4A4q",
+        "faq_GqY669",
+        "faq_AcDfGj",
+        "faq_bpHm8i",
+        "faq_a7xEEG"
+      ],
+      "settings": {
+        "lumni-faq-title": "Advanced Microneedling that promises results!",
+        "lumni-faq-description": "Enjoy endless clinical-level skincare at your convenience at much lower cost.",
+        "lumni-faq-featuredImg": "shopify:\/\/shop_images\/Image_15_ed0b33a5-83fe-40ec-ad43-2ec4015e8fc9.png",
+        "lumni-faq-bg": "shopify:\/\/shop_images\/Purple-Light-Gradient-Texture-Background-5_ca988b75-ff7b-4b71-9e6a-fff5ac3b8627.png"
+      }
+    },
     "multicolumn_Mj3FCH": {
       "type": "multicolumn",
       "blocks": {
@@ -339,14 +440,13 @@
     "lumni_new_banner_zN3Xky": {
       "type": "lumni-new-banner",
       "settings": {
-        "lumni_rating_stars": "enable",
-        "lumni-hero-tagline-id": "Hydro Dermabrasion",
-        "lumni-hero-heading-id": "By Lumni",
-        "lumni-hero-para-id": "You’ve probably heard of microdermabrasion which provides a deeper exfoliation thanks to the diamond crystal head. Hydro dermabrasion is a more gentle way to do just that, which makes it suitable for the most sensitive skin types too.",
-        "lumni-shop-text-id": "Shop All",
-        "lumni-shop-url-id": "#",
-        "lumni-hero-section-image": "shopify:\/\/shop_images\/Group-1090-new_768c33fc-3cdf-4a4b-bb68-aa4df57a9cb1.png",
-        "lumni-shop-addon-text-id": ""
+        "lumni-middle-banner-title": "By Lumni",
+        "lumni-middle-banner-rating": "enable",
+        "lumni-middle-banner-subtitle": "Hydro Dermabrasion",
+        "lumni-middle-banner-description": "You’ve probably heard of microdermabrasion which provides a deeper exfoliation thanks to the diamond crystal head. Hydro dermabrasion is a more gentle way to do just that, which makes it suitable for the most sensitive skin types too.",
+        "lumni-middle-banner-featuredimg": "shopify:\/\/shop_images\/Group-1090-new_1.png",
+        "lumni-middle-banner-url": "",
+        "lumni-middle-banner-urltext": "Shop All"
       }
     }
   },
@@ -357,6 +457,7 @@
     "lumni_collection_caro_wV7U6d",
     "star_product_wdA69V",
     "image_with_text_gg37wC",
+    "lumni_faq_ApdnxE",
     "multicolumn_Mj3FCH",
     "multicolumn_UE9ijm",
     "image_with_text_QaUEr6",
