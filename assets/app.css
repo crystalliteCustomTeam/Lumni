@@ -1318,6 +1318,10 @@ video {
   .xs\:tld-text-\[75px\] {
     font-size: 75px;
   }
+
+  .xs\:tld-text-\[24px\] {
+    font-size: 24px;
+  }
 }
 
 @media (min-width: 576px) {

@@ -1,6 +1,6 @@
 <div class="tld-py-[90px]" style="background:{{ section.settings.lumni-product-grid-background }};">
   <div class="tld-container">
-    <h2 class="tld-text-center tld-text-[40px]">{{ section.settings['lumni-product-grid-heading'] }}</h2>
+    <h2 class="tld-text-center xs:tld-text-[24px] md:tld-text-[30px] lg:tld-text-[40px]">{{ section.settings['lumni-product-grid-heading'] }}</h2>
     <div class="tld-grid tld-grid-cols-12 tld-mt-16 tld-gap-5">
       {% for product in section.settings['lumni-product-grid-products'].products %}
         {% if section.settings['lumni-product-grid-featureImg'] %}
@@ -28,7 +28,7 @@
             </div>
             <div class="tld-px-12 tld-my-8  tld-overflow-hidden">
               <h2 class="xs:tld-text-[13px] sm:tld-text-[15px] md:tld-text-[12px] lg:tld-text-[14px] xl:tld-text-[17px] tld-text-center">
-                {{ product.title | truncate: 30, '...' }}
+                {{ product.title | truncate: 25, '...' }}
               </h2>
             </div>
             <div class="tld-w-full tld-border-t tld-border-dashed tld-border-[#E1E1E1] tld-pt-5">
