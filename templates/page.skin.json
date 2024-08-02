@@ -110,14 +110,14 @@
         "heading_fAtqbr": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "Microneedling Pens and Starter Sets",
             "heading_size": "h1"
           }
         },
         "text_FQJf3k": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Introducing Lumni's cutting-edge microneedling pen, the ultimate solution for at-home microneedling treatments. Our microneedling pen harnesses the power of advanced technology to stimulate collagen production and rejuvenate the skin. With precision-engineered needles, the pen creates microchannels in the skin, allowing for deeper product penetration and enhanced results. Say goodbye to fine lines, wrinkles, and acne scars with our microneedling pen, designed for safe and effective use in the comfort of your own home. Experience the transformative power of microneedling with Lumni today!<\/p>"
           }
         },
         "button_HmJxge": {
@@ -140,8 +140,8 @@
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
+        "color_scheme": "scheme-2",
+        "full_width": false,
         "padding_top": 40,
         "padding_bottom": 52
       }
