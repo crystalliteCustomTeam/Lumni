@@ -154,6 +154,24 @@
         "padding_bottom": 0
       }
     },
+    "lumni_product_grid_R6j6C7": {
+      "type": "lumni-product-grid",
+      "settings": {
+        "lumni-product-grid-background": "#f8f8f6",
+        "lumni-product-grid-heading": "Clinical Grade Microneedling Serums",
+        "lumni-product-grid-featureImg": "shopify:\/\/shop_images\/productgrid.png",
+        "lumni-product-grid-products": "microneedling-serums"
+      }
+    },
+    "lumni_product_grid_te4wTc": {
+      "type": "lumni-product-grid",
+      "settings": {
+        "lumni-product-grid-background": "#f8f8f6",
+        "lumni-product-grid-heading": "Clean Girl Aesthetic",
+        "lumni-product-grid-featureImg": "shopify:\/\/shop_images\/Group_1089_c77d7f79-6f1e-475d-88ee-53ca75ec9f20.png",
+        "lumni-product-grid-products": "get-started-save"
+      }
+    },
     "lumni_faq_ApdnxE": {
       "type": "lumni-faq",
       "blocks": {
@@ -464,15 +482,6 @@
         "lumni-middle-banner-url": "",
         "lumni-middle-banner-urltext": "Shop All"
       }
-    },
-    "lumni_product_grid_R6j6C7": {
-      "type": "lumni-product-grid",
-      "settings": {
-        "lumni-product-grid-background": "#f8f8f6",
-        "lumni-product-grid-heading": "Clinical Grade Microneedling Serums",
-        "lumni-product-grid-featureImg": "shopify:\/\/shop_images\/productgrid.png",
-        "lumni-product-grid-products": "microneedling-serums"
-      }
     }
   },
   "order": [
@@ -483,13 +492,14 @@
     "star_product_wdA69V",
     "lumni_collection_products_8QzYcT",
     "image_with_text_gg37wC",
+    "lumni_product_grid_R6j6C7",
+    "lumni_product_grid_te4wTc",
     "lumni_faq_ApdnxE",
     "multicolumn_Mj3FCH",
     "multicolumn_UE9ijm",
     "image_with_text_QaUEr6",
     "multicolumn_rhRtd4",
     "announcement_bar_custom_fYtEtn",
-    "lumni_new_banner_zN3Xky",
-    "lumni_product_grid_R6j6C7"
+    "lumni_new_banner_zN3Xky"
   ]
 }
