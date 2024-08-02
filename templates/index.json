@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "hero_banner_WEKd7f": {
@@ -83,6 +92,13 @@
         "lumni-featured-ending-description": "Free fast shipping* • Complete Instructions • 1-Year Warranty",
         "lumni-featured-product-image": "shopify:\/\/shop_images\/Rectangle_15.png",
         "lumni-featured-product-item": "advanced-micro-needling-pen"
+      }
+    },
+    "lumni_collection_products_8QzYcT": {
+      "type": "lumni-collection-products",
+      "settings": {
+        "lumni-collection-product-title": "Clinical Grade Microneedling serums",
+        "lumni-collection-products": "skin-care-1"
       }
     },
     "image_with_text_gg37wC": {
@@ -448,6 +464,15 @@
         "lumni-middle-banner-url": "",
         "lumni-middle-banner-urltext": "Shop All"
       }
+    },
+    "lumni_product_grid_R6j6C7": {
+      "type": "lumni-product-grid",
+      "settings": {
+        "lumni-product-grid-background": "",
+        "lumni-product-grid-heading": "Clinical Grade Microneedling Serums",
+        "lumni-product-grid-featureImg": "shopify:\/\/shop_images\/productgrid.png",
+        "lumni-product-grid-products": "microneedling-serums"
+      }
     }
   },
   "order": [
@@ -456,6 +481,7 @@
     "editor_UVcJG6",
     "lumni_collection_caro_wV7U6d",
     "star_product_wdA69V",
+    "lumni_collection_products_8QzYcT",
     "image_with_text_gg37wC",
     "lumni_faq_ApdnxE",
     "multicolumn_Mj3FCH",
@@ -463,6 +489,7 @@
     "image_with_text_QaUEr6",
     "multicolumn_rhRtd4",
     "announcement_bar_custom_fYtEtn",
-    "lumni_new_banner_zN3Xky"
+    "lumni_new_banner_zN3Xky",
+    "lumni_product_grid_R6j6C7"
   ]
 }
