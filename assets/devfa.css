@@ -87,6 +87,21 @@ li#Slide-template--23080367817025__multicolumn_rhRtd4-4 {
 .section-template--23080367817025__image_with_text_QaUEr6-padding.gradient.color-scheme-1 .image-with-text__media-item.image-with-text__media-item--medium.image-with-text__media-item--bottom.grid__item {
     margin-top: -6rem;
 }
+#shopify-section-template--23101753262401__image_with_text_HWydRQ .image-with-text__media.image-with-text__media--small.global-media-settings.background-transparent.media {
+        margin-top: 0px !important;
+        height: 30rem;
+  }
+
+
+section#shopify-section-template--23106797437249__multicolumn_fRCByV .multicolumn.color-scheme-1.gradient.background-none.no-heading {
+    background-color: #EEEEEE;
+}
+#shopify-section-template--23106797437249__multicolumn_fRCByV .multicolumn-card__image-wrapper.multicolumn-card__image-wrapper--third-width.multicolumn-card-spacing {
+  width: 30% !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
 @media (max-width: 1200px ) {
     #shopify-section-template--23080367817025__image_with_text_gg37wC div#ImageWithText--template--23080367817025__image_with_text_gg37wC, #shopify-section-template--23101753262401__image_with_text_HWydRQ div#ImageWithText--template--23101753262401__image_with_text_HWydRQ {
         padding: 3rem 4rem 3rem 0.5rem !important;
@@ -171,14 +186,24 @@ li#Slide-template--23080367817025__multicolumn_rhRtd4-4 {
     width: 100% !important;
     max-width: 100%;
 }
+  #shopify-section-template--23106797437249__multicolumn_fRCByV .multicolumn-card.content-container {
+    padding: 10px 35px !important;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+  #shopify-section-template--23106797437249__multicolumn_fRCByV  .multicolumn-card__image-wrapper.multicolumn-card__image-wrapper--third-width.multicolumn-card-spacing {
+    width: 14% !important;
+}
+  
 }
 @media (max-width: 576px) {
   #shopify-section-template--23080367817025__image_with_text_gg37wC .image-with-text__media.image-with-text__media--small.global-media-settings.background-transparent.media {
         margin-top: 0px !important;
         height: 30rem;
   }
-  #shopify-section-template--23101753262401__image_with_text_HWydRQ .image-with-text__media.image-with-text__media--small.global-media-settings.background-transparent.media {
-        margin-top: 0px !important;
-        height: 30rem;
-  }
+      #shopify-section-template--23106797437249__multicolumn_fRCByV .multicolumn-card__image-wrapper.multicolumn-card__image-wrapper--third-width.multicolumn-card-spacing {
+        width: 30% !important;
+    }
 }

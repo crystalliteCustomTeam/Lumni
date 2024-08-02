@@ -55,8 +55,9 @@
         "column_JM9Fkb": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/Group_841.png",
+            "title": "Cliically Used",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -67,6 +68,11 @@
         "column_ximgWY",
         "column_JM9Fkb"
       ],
+      "custom_css": [
+        ".multicolumn-card.content-container {display: flex; align-items: center; text-align: center; padding: 0px 35px;}",
+        ".multicolumn-card__info {padding: 0rem 1.5rem 0rem 1.5rem !important;}",
+        "li#Slide-template--23106797437249__multicolumn_fRCByV-2 {border-left: 1px solid #707070; border-right: 1px solid #707070;}"
+      ],
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -74,7 +80,7 @@
         "image_ratio": "adapt",
         "columns_desktop": 3,
         "column_alignment": "center",
-        "background_style": "primary",
+        "background_style": "none",
         "button_label": "",
         "button_link": "",
         "color_scheme": "",

@@ -620,20 +620,20 @@ video {
   grid-column: span 12 / span 12;
 }
 
-.tld-col-span-4 {
-  grid-column: span 4 / span 4;
-}
-
-.tld-col-span-8 {
-  grid-column: span 8 / span 8;
-}
-
 .tld-col-span-3 {
   grid-column: span 3 / span 3;
 }
 
+.tld-col-span-4 {
+  grid-column: span 4 / span 4;
+}
+
 .tld-col-span-6 {
   grid-column: span 6 / span 6;
+}
+
+.tld-col-span-2 {
+  grid-column: span 2 / span 2;
 }
 
 .tld-mx-4 {
@@ -679,6 +679,10 @@ video {
   margin-top: 2.5rem;
 }
 
+.tld-mt-16 {
+  margin-top: 4rem;
+}
+
 .tld-mt-20 {
   margin-top: 5rem;
 }
@@ -693,10 +697,6 @@ video {
 
 .tld-mt-8 {
   margin-top: 2rem;
-}
-
-.tld-mt-16 {
-  margin-top: 4rem;
 }
 
 .tld-block {
@@ -743,16 +743,12 @@ video {
   height: 300px;
 }
 
-.tld-h-full {
-  height: 100%;
-}
-
 .tld-h-\[471px\] {
   height: 471px;
 }
 
-.tld-h-\[214px\] {
-  height: 214px;
+.tld-h-full {
+  height: 100%;
 }
 
 .tld-w-6 {
@@ -790,14 +786,6 @@ video {
 .tld-w-max {
   width: -moz-max-content;
   width: max-content;
-}
-
-.tld-w-\[650px\] {
-  width: 650px;
-}
-
-.tld-w-\[303px\] {
-  width: 303px;
 }
 
 .tld-shrink-0 {
@@ -846,6 +834,14 @@ video {
 
 .tld-grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.tld-grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.tld-grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .tld-flex-wrap {
@@ -965,6 +961,11 @@ video {
 .tld-bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.tld-bg-\[\#F5F5F5\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
 }
 
 .tld-bg-cover {
@@ -1115,10 +1116,6 @@ video {
 
 .tld-text-\[7px\] {
   font-size: 7px;
-}
-
-.tld-text-\[20px\] {
-  font-size: 20px;
 }
 
 .tld-font-bold {
@@ -1398,6 +1395,10 @@ video {
     grid-column: span 8 / span 8;
   }
 
+  .md\:tld-col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
   .md\:tld-mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -1421,6 +1422,14 @@ video {
 
   .md\:tld-h-\[400px\] {
     height: 400px;
+  }
+
+  .md\:tld-h-\[271px\] {
+    height: 271px;
+  }
+
+  .md\:tld-h-\[333px\] {
+    height: 333px;
   }
 
   .md\:tld-w-\[130px\] {
@@ -1567,6 +1576,10 @@ video {
 
   .lg\:tld-h-full {
     height: 100%;
+  }
+
+  .lg\:tld-h-\[471px\] {
+    height: 471px;
   }
 
   .lg\:tld-w-\[170px\] {

@@ -5,17 +5,17 @@
       {% for product in section.settings['lumni-product-grid-products'].products %}
         {% if section.settings['lumni-product-grid-featureImg'] %}
           {% if forloop.first %}
-            <div class="tld-col-span-6">
+            <div class="tld-col-span-6 tld-hidden md:tld-block">
               <img
                 src="{{ section.settings.lumni-product-grid-featureImg | image_url }}"
                 width="650"
                 height="471"
-                class="tld-w-full tld-h-[471px]"
+                class="tld-w-full md:tld-h-[333px] lg:tld-h-[471px]"
               >
             </div>
           {% endif %}
         {% endif %}
-        <div class="tld-col-span-3 tld-bg-white">
+        <div class="tld-col-span-6 md:tld-col-span-3 tld-bg-white">
           <div class="tld-bg-white tld-rounded-[20px] tld-pb-10 tld-mx-auto ">
             <div class="tld-my-10">
               <img
