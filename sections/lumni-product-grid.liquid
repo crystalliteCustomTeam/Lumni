@@ -1,0 +1,108 @@
+<div class="tld-py-[90px]" style="background:{{ section.settings.lumni-product-grid-background }};">
+  <div class="tld-container">
+    <h2 class="tld-text-center tld-text-[40px]">{{ section.settings['lumni-product-grid-heading'] }}</h2>
+    <div class="tld-grid tld-grid-cols-12 tld-mt-16 tld-gap-5">
+      {% for product in section.settings['lumni-product-grid-products'].products %}
+        {% if section.settings['lumni-product-grid-featureImg'] %}
+          {% if forloop.first %}
+            <div class="tld-col-span-6">
+              <img
+                src="{{ section.settings.lumni-product-grid-featureImg | image_url }}"
+                width="650"
+                height="471"
+                class="tld-w-full tld-h-[471px]"
+              >
+            </div>
+          {% endif %}
+        {% endif %}
+        <div class="tld-col-span-3 tld-bg-white">
+          <div class="tld-bg-white tld-rounded-[20px] tld-pb-10 tld-mx-auto ">
+            <div class="tld-my-10">
+              <img
+                src="{{ product.featured_image | image_url }}"
+                width="300"
+                height="214"
+                alt="{{ product.title }}"
+                class="tld-w-full"
+              >
+            </div>
+            <div class="tld-px-12 tld-my-8  tld-overflow-hidden">
+              <h2 class="xs:tld-text-[13px] sm:tld-text-[15px] md:tld-text-[12px] lg:tld-text-[14px] xl:tld-text-[17px] tld-text-center">
+                {{ product.title | truncate: 30, '...' }}
+              </h2>
+            </div>
+            <div class="tld-w-full tld-border-t tld-border-dashed tld-border-[#E1E1E1] tld-pt-5">
+              {% assign currency_symbol = shop.currency | upcase %}
+
+              <h2 class="md:tld-text-[18px] lg:tld-text-[20px] xl:tld-text-[25px] tld-text-center tld-font-bold">
+                {% case currency_symbol %}
+                  {% when 'USD' %}
+                    ${{ product.price | money_without_currency }}
+                  {% when 'EUR' %}
+                    €{{ product.price | money_without_currency }}
+                  {% when 'GBP' %}
+                    £{{ product.price | money_without_currency }}
+                  {% else %}
+                    {{ product.price | money }}
+                {% endcase %}
+              </h2>
+            </div>
+            <div class="tld-bg-[#C7DBC6]  md:tld-py-3  tld-px-5 tld-py-2 sm:tld-px-5 sm:tld-py-5 md:tld-px-5 lg:tld-py-3 lg:tld-px-8 tld-mt-5  md:tld-mt-5 lg:tld-mt-10 tld-rounded-[15px] tld-w-max tld-mx-auto">
+              <a
+                href="{{ product.url }}"
+                class="md:tld-text-[12px] lg:tld-text-[15px] xl:tld-text-[17px] tld-text-black  tld-flex tld-gap-5"
+              >
+                Add To Cart
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 64 64"
+                  class="tld-w-[24px] tld-h-[24px]   md:tld-w-[18px] md:tld-h-[18px] lg:tld-w-[24px] lg:tld-h-[24px]"
+                >
+                  <path
+                      d="M48 16h-4v-4c0-6.6-5.4-12-12-12S20 5.4 20 12v4h-4c-2.2 0-4 1.8-4 4v36c0 2.2 1.8 4 4 4h32c2.2 0 4-1.8 4-4V20c0-2.2-1.8-4-4-4zM24 12c0-4.4 3.6-8 8-8s8 3.6 8 8v4H24v-4zm24 44H16V20h4v4h4v-4h16v4h4v-4h4v36z"
+                      fill="#000000" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Lumni Product Grid",
+  "tag": "section",
+  "class": "lumni-product-grid",
+  "settings": [
+    {
+      "type": "color",
+      "id": "lumni-product-grid-background",
+      "label": "#F8F8F6"
+    },
+    {
+      "type": "text",
+      "id": "lumni-product-grid-heading",
+      "label": "Lumni Product Grid Heading",
+      "default": "Clinical Grade Microneedling Serums"
+    },
+    {
+      "type": "image_picker",
+      "id": "lumni-product-grid-featureImg",
+      "label": "Lumni Product Grid Feature Image"
+    },
+    {
+      "type": "collection",
+      "id": "lumni-product-grid-products",
+      "label": "Lumni Product Grid Products"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Lumni Product Grid"
+    }
+  ]
+}
+{% endschema %}
