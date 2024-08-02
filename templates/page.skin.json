@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -87,6 +96,55 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "lumni_collection_products_Vfe9DU": {
+      "type": "lumni-collection-products",
+      "settings": {
+        "lumni-collection-product-title": "Clinical Grade Microneedling serums",
+        "lumni-collection-products": "skin-care-1"
+      }
+    },
+    "rich_text_EJ8V3j": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fAtqbr": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_FQJf3k": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "button_HmJxge": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_fAtqbr",
+        "text_FQJf3k",
+        "button_HmJxge"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -94,6 +152,8 @@
     "hero_banner_VbW7CK",
     "announcement_bar_custom_RGzy89",
     "editor_3Hkx87",
-    "image_with_text_HWydRQ"
+    "image_with_text_HWydRQ",
+    "lumni_collection_products_Vfe9DU",
+    "rich_text_EJ8V3j"
   ]
 }
