@@ -163,15 +163,6 @@
         "lumni-product-grid-products": "microneedling-serums"
       }
     },
-    "lumni_product_grid_te4wTc": {
-      "type": "lumni-product-grid",
-      "settings": {
-        "lumni-product-grid-background": "#f8f8f6",
-        "lumni-product-grid-heading": "Clean Girl Aesthetic",
-        "lumni-product-grid-featureImg": "shopify:\/\/shop_images\/Group_1089_c77d7f79-6f1e-475d-88ee-53ca75ec9f20.png",
-        "lumni-product-grid-products": "get-started-save"
-      }
-    },
     "lumni_faq_ApdnxE": {
       "type": "lumni-faq",
       "blocks": {
@@ -271,6 +262,15 @@
         "lumni-faq-description": "Enjoy endless clinical-level skincare at your convenience at much lower cost.",
         "lumni-faq-featuredImg": "shopify:\/\/shop_images\/Image_15_ed0b33a5-83fe-40ec-ad43-2ec4015e8fc9.png",
         "lumni-faq-bg": "shopify:\/\/shop_images\/Purple-Light-Gradient-Texture-Background-5_ca988b75-ff7b-4b71-9e6a-fff5ac3b8627.png"
+      }
+    },
+    "lumni_product_grid_te4wTc": {
+      "type": "lumni-product-grid",
+      "settings": {
+        "lumni-product-grid-background": "#f8f8f6",
+        "lumni-product-grid-heading": "Clean Girl Aesthetic",
+        "lumni-product-grid-featureImg": "shopify:\/\/shop_images\/Group_1089_c77d7f79-6f1e-475d-88ee-53ca75ec9f20.png",
+        "lumni-product-grid-products": "get-started-save"
       }
     },
     "multicolumn_Mj3FCH": {
@@ -493,8 +493,8 @@
     "lumni_collection_products_8QzYcT",
     "image_with_text_gg37wC",
     "lumni_product_grid_R6j6C7",
-    "lumni_product_grid_te4wTc",
     "lumni_faq_ApdnxE",
+    "lumni_product_grid_te4wTc",
     "multicolumn_Mj3FCH",
     "multicolumn_UE9ijm",
     "image_with_text_QaUEr6",
