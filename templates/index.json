@@ -468,7 +468,7 @@
     "lumni_product_grid_R6j6C7": {
       "type": "lumni-product-grid",
       "settings": {
-        "lumni-product-grid-background": "",
+        "lumni-product-grid-background": "#f8f8f6",
         "lumni-product-grid-heading": "Clinical Grade Microneedling Serums",
         "lumni-product-grid-featureImg": "shopify:\/\/shop_images\/productgrid.png",
         "lumni-product-grid-products": "microneedling-serums"
